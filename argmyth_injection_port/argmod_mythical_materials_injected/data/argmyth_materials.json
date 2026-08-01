@@ -1,0 +1,770 @@
+{
+  "module": {
+    "prefix": "ARGMYTH_",
+    "name": "ArgMOD Mythical",
+    "version": "1.0",
+    "depends_on": [
+      "ARGMOD_"
+    ]
+  },
+  "materials": [
+    {
+      "key": "BISMANGAZ_BRONZE",
+      "name": "bismangaz bronze",
+      "material_class": "METAL",
+      "color": "SAFFRON",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 10,
+      "solid_density": 7700,
+      "liquid_density": 7350,
+      "molar_mass": 62151,
+      "heat": {
+        "spec_heat": 419,
+        "melting_point": 11868,
+        "boiling_point": 14068,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1575000,
+          "COMPRESSIVE": 585000,
+          "TENSILE": 450000,
+          "TORSION": 300000,
+          "SHEAR": 300000,
+          "BENDING": 450000
+        },
+        "fracture": {
+          "IMPACT": 2625000,
+          "COMPRESSIVE": 975000,
+          "TENSILE": 750000,
+          "TORSION": 500000,
+          "SHEAR": 500000,
+          "BENDING": 750000
+        },
+        "strain_at_yield": {
+          "IMPACT": 1291,
+          "COMPRESSIVE": 480,
+          "TENSILE": 385,
+          "TORSION": 682,
+          "SHEAR": 682,
+          "BENDING": 385
+        },
+        "max_edge": 10340
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        1
+      ],
+      "build_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "COOL_SILVER",
+      "name": "cool silver",
+      "material_class": "METAL",
+      "color": "PALE_BLUE",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 20,
+      "solid_density": 11656,
+      "liquid_density": 10310,
+      "molar_mass": 109688,
+      "heat": {
+        "spec_heat": 150,
+        "melting_point": 13249,
+        "boiling_point": 17014,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 216000,
+          "COMPRESSIVE": 216000,
+          "TENSILE": 180000,
+          "TORSION": 104000,
+          "SHEAR": 104000,
+          "BENDING": 180000
+        },
+        "fracture": {
+          "IMPACT": 432000,
+          "COMPRESSIVE": 432000,
+          "TENSILE": 360000,
+          "TORSION": 208000,
+          "SHEAR": 208000,
+          "BENDING": 360000
+        },
+        "strain_at_yield": {
+          "IMPACT": 120,
+          "COMPRESSIVE": 120,
+          "TENSILE": 150,
+          "TORSION": 410,
+          "SHEAR": 410,
+          "BENDING": 150
+        },
+        "max_edge": 10000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": false,
+        "ITEMS_WEAPON_RANGED": false,
+        "ITEMS_AMMO": false,
+        "ITEMS_DIGGER": false,
+        "ITEMS_ARMOR": false,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        3,
+        7,
+        0
+      ],
+      "build_color": [
+        3,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "SEA_GOLD",
+      "name": "sea gold",
+      "material_class": "METAL",
+      "color": "AQUAMARINE",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 30,
+      "solid_density": 12659,
+      "liquid_density": 12375,
+      "molar_mass": 126981,
+      "heat": {
+        "spec_heat": 900,
+        "melting_point": 11188,
+        "boiling_point": 14534,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 70000,
+          "COMPRESSIVE": 70000,
+          "TENSILE": 20000,
+          "TORSION": 20000,
+          "SHEAR": 20000,
+          "BENDING": 20000
+        },
+        "fracture": {
+          "IMPACT": 175000,
+          "COMPRESSIVE": 175000,
+          "TENSILE": 50000,
+          "TORSION": 50000,
+          "SHEAR": 50000,
+          "BENDING": 50000
+        },
+        "strain_at_yield": {
+          "IMPACT": 921,
+          "COMPRESSIVE": 921,
+          "TENSILE": 29,
+          "TORSION": 77,
+          "SHEAR": 77,
+          "BENDING": 29
+        },
+        "max_edge": 10000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": false,
+        "ITEMS_WEAPON_RANGED": false,
+        "ITEMS_AMMO": false,
+        "ITEMS_DIGGER": false,
+        "ITEMS_ARMOR": false,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        3,
+        7,
+        0
+      ],
+      "build_color": [
+        3,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "AKIMRIL",
+      "name": "akimril",
+      "material_class": "METAL",
+      "color": "AKIMRIL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 60,
+      "solid_density": 4530,
+      "liquid_density": 4430,
+      "molar_mass": 55361,
+      "heat": {
+        "spec_heat": 523,
+        "melting_point": 13056,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 3815000,
+          "COMPRESSIVE": 1199000,
+          "TENSILE": 1090000,
+          "TORSION": 629312,
+          "SHEAR": 629312,
+          "BENDING": 1090000
+        },
+        "fracture": {
+          "IMPACT": 4620000,
+          "COMPRESSIVE": 1452000,
+          "TENSILE": 1320000,
+          "TORSION": 762102,
+          "SHEAR": 762102,
+          "BENDING": 1320000
+        },
+        "strain_at_yield": {
+          "IMPACT": 4016,
+          "COMPRESSIVE": 1262,
+          "TENSILE": 1009,
+          "TORSION": 1535,
+          "SHEAR": 1535,
+          "BENDING": 1009
+        },
+        "max_edge": 10900
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": true
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "IGERKEL",
+      "name": "igerkel",
+      "material_class": "METAL",
+      "color": "RIVER_BLUE",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 10,
+      "solid_density": 6672,
+      "liquid_density": 6000,
+      "molar_mass": 48900,
+      "heat": {
+        "spec_heat": 400,
+        "melting_point": 13146,
+        "boiling_point": 15121,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 280000,
+          "COMPRESSIVE": 280000,
+          "TENSILE": 140000,
+          "TORSION": 97778,
+          "SHEAR": 97778,
+          "BENDING": 140000
+        },
+        "fracture": {
+          "IMPACT": 560000,
+          "COMPRESSIVE": 560000,
+          "TENSILE": 315000,
+          "TORSION": 220000,
+          "SHEAR": 220000,
+          "BENDING": 315000
+        },
+        "strain_at_yield": {
+          "IMPACT": 260,
+          "COMPRESSIVE": 260,
+          "TENSILE": 127,
+          "TORSION": 238,
+          "SHEAR": 238,
+          "BENDING": 127
+        },
+        "max_edge": 10000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": false,
+        "ITEMS_WEAPON_RANGED": false,
+        "ITEMS_AMMO": false,
+        "ITEMS_DIGGER": false,
+        "ITEMS_ARMOR": false,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        1,
+        7,
+        0
+      ],
+      "build_color": [
+        1,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "REMANGKEL",
+      "name": "remangkel",
+      "material_class": "METAL",
+      "color": "CERULEAN",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 25,
+      "solid_density": 4672,
+      "liquid_density": 4000,
+      "molar_mass": 48900,
+      "heat": {
+        "spec_heat": 400,
+        "melting_point": 12246,
+        "boiling_point": 14421,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 300000,
+          "COMPRESSIVE": 300000,
+          "TENSILE": 90000,
+          "TORSION": 70571,
+          "SHEAR": 70571,
+          "BENDING": 90000
+        },
+        "fracture": {
+          "IMPACT": 500000,
+          "COMPRESSIVE": 500000,
+          "TENSILE": 185000,
+          "TORSION": 150000,
+          "SHEAR": 150000,
+          "BENDING": 185000
+        },
+        "strain_at_yield": {
+          "IMPACT": 167,
+          "COMPRESSIVE": 167,
+          "TENSILE": 82,
+          "TORSION": 110,
+          "SHEAR": 110,
+          "BENDING": 82
+        },
+        "max_edge": 10000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": false,
+        "ITEMS_WEAPON_RANGED": false,
+        "ITEMS_AMMO": false,
+        "ITEMS_DIGGER": false,
+        "ITEMS_ARMOR": false,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        1,
+        7,
+        0
+      ],
+      "build_color": [
+        1,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "GOBRONZE",
+      "name": "gobronze",
+      "material_class": "METAL",
+      "color": "GOBRONZE",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 6,
+      "solid_density": 8850,
+      "liquid_density": 8450,
+      "molar_mass": 61157,
+      "heat": {
+        "spec_heat": 419,
+        "melting_point": 11868,
+        "boiling_point": 14068,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 808850,
+          "COMPRESSIVE": 277320,
+          "TENSILE": 231100,
+          "TORSION": 133426,
+          "SHEAR": 133426,
+          "BENDING": 231100
+        },
+        "fracture": {
+          "IMPACT": 1456000,
+          "COMPRESSIVE": 499200,
+          "TENSILE": 416000,
+          "TORSION": 240178,
+          "SHEAR": 240178,
+          "BENDING": 416000
+        },
+        "strain_at_yield": {
+          "IMPACT": 843,
+          "COMPRESSIVE": 289,
+          "TENSILE": 216,
+          "TORSION": 325,
+          "SHEAR": 325,
+          "BENDING": 216
+        },
+        "max_edge": 10640
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "ORICHALCUM",
+      "name": "orichalcum",
+      "material_class": "METAL",
+      "color": "ORICHALCUM",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 75,
+      "solid_density": 7895,
+      "liquid_density": 7345,
+      "molar_mass": 63000,
+      "heat": {
+        "spec_heat": 400,
+        "melting_point": 12168,
+        "boiling_point": 14320,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 3520650,
+          "COMPRESSIVE": 1307700,
+          "TENSILE": 1005900,
+          "TORSION": 580757,
+          "SHEAR": 580757,
+          "BENDING": 1005900
+        },
+        "fracture": {
+          "IMPACT": 5985000,
+          "COMPRESSIVE": 2223000,
+          "TENSILE": 1710000,
+          "TORSION": 987269,
+          "SHEAR": 987269,
+          "BENDING": 1710000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2817,
+          "COMPRESSIVE": 1046,
+          "TENSILE": 838,
+          "TORSION": 1291,
+          "SHEAR": 1291,
+          "BENDING": 838
+        },
+        "max_edge": 10600
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": true
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        6,
+        7,
+        1
+      ],
+      "build_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "MITHRIL",
+      "name": "mithril",
+      "material_class": "METAL",
+      "color": "MITHRIL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 100,
+      "solid_density": 4700,
+      "liquid_density": 4430,
+      "molar_mass": 55361,
+      "heat": {
+        "spec_heat": 503,
+        "melting_point": 13556,
+        "boiling_point": 16500,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 5425000,
+          "COMPRESSIVE": 1860000,
+          "TENSILE": 1550000,
+          "TORSION": 894893,
+          "SHEAR": 894893,
+          "BENDING": 1550000
+        },
+        "fracture": {
+          "IMPACT": 6737500,
+          "COMPRESSIVE": 2310000,
+          "TENSILE": 1925000,
+          "TORSION": 1111399,
+          "SHEAR": 1111399,
+          "BENDING": 1925000
+        },
+        "strain_at_yield": {
+          "IMPACT": 6536,
+          "COMPRESSIVE": 2241,
+          "TENSILE": 1722,
+          "TORSION": 2632,
+          "SHEAR": 2632,
+          "BENDING": 1722
+        },
+        "max_edge": 10900
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": true
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "REDSTEEL",
+      "name": "angziril steel",
+      "material_class": "METAL",
+      "color": "REDSTEEL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 100,
+      "solid_density": 7500,
+      "liquid_density": 7300,
+      "molar_mass": 58723,
+      "heat": {
+        "spec_heat": 452,
+        "melting_point": 13543,
+        "boiling_point": 16500,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 4550000,
+          "COMPRESSIVE": 1885000,
+          "TENSILE": 1300000,
+          "TORSION": 910000,
+          "SHEAR": 910000,
+          "BENDING": 1300000
+        },
+        "fracture": {
+          "IMPACT": 6650000,
+          "COMPRESSIVE": 2755000,
+          "TENSILE": 1900000,
+          "TORSION": 1330000,
+          "SHEAR": 1330000,
+          "BENDING": 1900000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2050,
+          "COMPRESSIVE": 849,
+          "TENSILE": 650,
+          "TORSION": 1230,
+          "SHEAR": 1230,
+          "BENDING": 650
+        },
+        "max_edge": 11750
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": true
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        4,
+        7,
+        1
+      ],
+      "build_color": [
+        4,
+        7,
+        1
+      ]
+    }
+  ]
+}

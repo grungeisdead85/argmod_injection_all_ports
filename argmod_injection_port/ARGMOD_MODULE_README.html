@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ArgMOD module guide</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+  <style type="text/css">body{max-width:52em;margin:3em auto;padding:0 1.5em;
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+color:#24292f;background:#fff}
+h1{font-size:2em;border-bottom:1px solid #d8dee4;padding-bottom:.3em;margin-top:0}
+h2{font-size:1.5em;border-bottom:1px solid #d8dee4;padding-bottom:.3em;margin-top:2em}
+h3{font-size:1.2em;margin-top:1.8em}
+table{border-collapse:collapse;width:100%;margin:1.2em 0;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:.5em .8em;text-align:left;vertical-align:top}
+th{background:#f6f8fa;font-weight:600}
+tr:nth-child(2n) td{background:#f6f8fa}
+code{background:#eff1f3;padding:.15em .35em;border-radius:4px;
+font:.88em/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+pre{background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:1em;overflow-x:auto}
+pre code{background:none;padding:0;font-size:.85em}
+blockquote{border-left:4px solid #d0d7de;margin:1em 0;padding:0 1em;color:#57606a}
+hr{border:0;border-top:1px solid #d8dee4;margin:2.5em 0}
+a{color:#0969da}
+</style>
+</head>
+<body>
+<h1 id="working-with-the-injected-half-of-argmod">Working with the
+injected half of ArgMOD</h1>
+<p>I’ve ported most of ArgMOD to run through Refinish Metal’s module
+engine. This explains what changed, what you can now do from JSON, and
+where the edges are.</p>
+<p>You don’t need to know Lua. Everything here happens in two files:</p>
+<pre><code>data/argmod_materials.json
+data/argmod_reactions.json</code></pre>
+<hr />
+<h2 id="what-refinish-metal-is-and-what-injected-means">What Refinish
+Metal is, and what “injected” means</h2>
+<p>Refinish Metal is a DFHack mod. The part that matters to you is its
+<strong>module engine</strong>: after a save loads, it writes materials
+and reactions directly into DF’s memory, the same C++ arrays the game
+filled from your raws a moment earlier. The game can’t tell the
+difference. An injected reaction shows up in the workshop menu and runs
+like any other.</p>
+<p>Before every save it pulls all of that back out again, so
+<strong>nothing custom is ever written to the save file</strong>. What
+that definitely buys you: you can rewrite the injected half completely,
+change materials, add reactions, restructure the lot, and reload the
+same save with no migration and no regen. (Whether a save survives
+<em>uninstalling</em> the RM outright I’ve never tested; there’s still
+an <code>info.txt</code> registration in play.)</p>
+<p>The payoff is that injected content is <strong>not part of
+worldgen</strong>. You can add, change or delete an injected material or
+reaction and it takes effect on the next launch, on an existing save,
+with no regen. Raws can’t do that. Change an <code>[INORGANIC:]</code>
+in raws and every existing world keeps the old one.</p>
+<p>The cost is that this ArgMOD port <strong>requires Refinish
+Metal</strong> for the injected half to appear. Without it, the raw half
+loads normally and the rest simply isn’t there.</p>
+<h3 id="how-much-you-can-add">How much you can add</h3>
+<p>More than you’re used to budgeting for. Once content is injected it’s
+outside worldgen entirely, so the usual reason to be frugal with new
+inorganics doesn’t apply. Only inorganics added via raws will impact
+mineral diversity at worldgen, and once that issue is circumvented there
+is no further bottleneck which I’ve discovered beyond hardware
+limitations and menu bloat which can be managed with categories.</p>
+<p>For scale: my own load order with every RM base metal active runs
+somewhere upwards of 100,000 materials and on the order of a million
+reactions and permissions. The only thing that grows with it is
+data-cycle latency: how long the engine takes to write everything in on
+load and pull it back out before a save. Worldgen is untouched. Data
+cycle latency and menu latency are the only limits left to manage.</p>
+<p>Your injected half is 68 materials and 202 reactions. That’s a drop
+in the bucket once you escape worldgen. You could add a lot more stuff
+and it would still be a drop in the bucket. If you’re also running RM on
+top with all base metals selected and you have tens of thousands of
+refinished variations of all your base metals, you’ll have a lot of menu
+lag when clicking a magnifying glass which contains those inorganics.
+That being said, base metal selections are fully configurable in RM. You
+can even choose to leave all base metals unselected, at which point RM
+can operate as a module injection shell without ever building or loading
+its own refinishing assets at all.</p>
+<p>The limit you <em>will</em> hit is the workshop menu: latency and
+clutter, because every reaction is a real entry in a real list. That’s
+what reaction categories are for. There may be better answers to menu
+clutter later; for now, categories.</p>
+<hr />
+<h2 id="the-one-rule-that-will-break-things">The one rule that will
+break things</h2>
+<p><strong>Raws are parsed when the world loads. Injection happens
+afterwards.</strong></p>
+<p>That gives references a direction:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Works?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Injected content → raw material</td>
+<td><strong>Yes.</strong> Resolved at runtime, always fine.</td>
+</tr>
+<tr class="even">
+<td>Raw file → injected material</td>
+<td><strong>No.</strong> The material doesn’t exist yet.</td>
+</tr>
+</tbody>
+</table>
+<p>A raw file pointing at an injected material doesn’t error. It fails
+quietly, and the symptoms don’t look like a missing material:</p>
+<ul>
+<li>an unresolved <strong>reagent</strong> material degrades to <em>“any
+material of that item type”</em>, so the reaction silently accepts the
+wrong ingredients</li>
+<li>an unresolved <strong>product</strong> material leaves
+<code>mat_index</code> at −1, which the game renders as
+<strong>magma</strong></li>
+<li>an unresolved <strong>graphics</strong> binding drops the custom
+tile with no complaint</li>
+</ul>
+<p>I hit all three during the port. If a reaction ever produces magma,
+this is why.</p>
+<p>The practical consequence: <strong>if any raw file mentions a
+material, that material has to stay in raws.</strong> That’s why some of
+your metals are still in <code>inorganic_metals_arg.txt</code> despite
+being perfectly good injection candidates. <code>SLAG</code> and
+<code>WROUGHT_IRON</code> are named by raw reactions which can’t be
+injected; the ferroalloys are named by
+<code>graphics_arg_ores.txt</code>.</p>
+<hr />
+<h2 id="what-lives-where-and-why">What lives where, and why</h2>
+<h3 id="stayed-in-raws">Stayed in raws</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Content</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Everything in <code>inorganic_all_minerals_arg.txt</code></td>
+<td>Spawns in the ground. Worldgen can’t be injected.</td>
+</tr>
+<tr class="even">
+<td><code>CHROMIUM</code>, <code>COBALT</code>,
+<code>MANGANESE</code></td>
+<td>You <code>CUT_INORGANIC</code> and redefine them. Replacing isn’t
+adding.</td>
+</tr>
+<tr class="odd">
+<td>The 21 reactions you <code>CUT_REACTION</code> and redefine</td>
+<td>Same reason.</td>
+</tr>
+<tr class="even">
+<td><code>MAKE_SOAP_FROM_TALLOW_SODA</code></td>
+<td>Uses a <code>GLOB</code> reagent, which the engine can’t express
+yet.</td>
+</tr>
+<tr class="odd">
+<td><code>SLAG</code>, <code>WROUGHT_IRON</code>, <code>ANTIMONY</code>,
+<code>COPPER_OXIDE</code>, <code>SODIUM_HYDROXIDE</code></td>
+<td>Named by those 21 raw reactions.</td>
+</tr>
+<tr class="even">
+<td>10 ferroalloys and <code>MOLYBDENUM</code></td>
+<td>Named by <code>graphics_arg_ores.txt</code>.</td>
+</tr>
+<tr class="odd">
+<td>11 oxides and sulfates</td>
+<td>Named by <code>MATERIAL_REACTION_PRODUCT</code> in the minerals
+file.</td>
+</tr>
+<tr class="even">
+<td><code>building_arg_chemist.txt</code></td>
+<td>Buildings can’t be injected <em>yet</em>. The engine locates yours
+by name instead.</td>
+</tr>
+<tr class="odd">
+<td><code>descriptor_color_palette_arg.txt</code></td>
+<td>Colours resolve by name at runtime. Keep this file; without it every
+custom metal falls back to grey, silently.</td>
+</tr>
+<tr class="even">
+<td>Your <code>SELECT_INORGANIC</code> edits to vanilla metals</td>
+<td>Editing existing materials, not adding new ones.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="injected">Injected</h3>
+<p>Everything else: 29 alloys, 39 chemical powders and liquids, 202
+reactions across the smelter, chemist, mill, kiln, ashery and soap
+maker, 20 reaction categories, and the entity permissions.</p>
+<p><code>FORTRESS_MODE_ENABLED</code> is carried on all 201 reactions
+that had it. <code>WORLDGEN_ENABLED</code> on two reactions is not, and
+can’t be, since worldgen has finished before injection happens.</p>
+<hr />
+<h2 id="where-the-definition-now-lives">Where the definition now
+lives</h2>
+<p>For anything injected, <strong>the JSON is the definition.</strong> I
+deleted those <code>[REACTION:...]</code> and
+<code>[INORGANIC:...]</code> blocks from your raw files, so editing the
+raws for that content does nothing; there’s nothing left there to
+edit.</p>
+<p>For anything still in raws, the raws remain the definition. The JSON
+can still <em>reference</em> those materials freely. That’s the whole
+point of the direction rule above, and injected reactions do it
+constantly (<code>SLAG</code>, <code>WROUGHT_IRON</code> and every
+vanilla metal are named from JSON). What the JSON doesn’t do is redefine
+them.</p>
+<p>Nothing is defined in both places. If you’re unsure which half
+something lives in, search the JSON for its id first.</p>
+<hr />
+<h2 id="adding-a-material">Adding a material</h2>
+<p>Each entry in <code>argmod_materials.json</code> is one
+<code>[INORGANIC:...]</code>. The <code>key</code> is the id
+<strong>without</strong> the <code>ARGMOD_</code> prefix. The engine
+adds that, so <code>DAMASCUS_STEEL</code> becomes
+<code>ARGMOD_DAMASCUS_STEEL</code> in game.</p>
+<p><strong>The prefix isn’t cosmetic.</strong> It’s the only way the
+engine can tell its own objects apart from the game’s. Everything
+injected has to be found again and removed before every save, restored
+after, and matched back up to items in your fort across those cycles.
+That all keys off the prefix. Don’t set it to something another module
+might use, and don’t write pre-prefixed ids into <code>key</code> or
+you’d get <code>ARGMOD_ARGMOD_X</code> and the engine would lose track
+of it.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;key&quot;</span><span class="fu">:</span> <span class="st">&quot;DAMASCUS_STEEL&quot;</span><span class="fu">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;damasklilar steel&quot;</span><span class="fu">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;material_class&quot;</span><span class="fu">:</span> <span class="st">&quot;METAL&quot;</span><span class="fu">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;color&quot;</span><span class="fu">:</span> <span class="st">&quot;DAMASCUS&quot;</span><span class="fu">,</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;liquid_color&quot;</span><span class="fu">:</span> <span class="st">&quot;RED&quot;</span><span class="fu">,</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;gas_color&quot;</span><span class="fu">:</span> <span class="st">&quot;RED&quot;</span><span class="fu">,</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;value&quot;</span><span class="fu">:</span> <span class="dv">30</span><span class="fu">,</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;solid_density&quot;</span><span class="fu">:</span> <span class="dv">7850</span><span class="fu">,</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;liquid_density&quot;</span><span class="fu">:</span> <span class="dv">6980</span><span class="fu">,</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;molar_mass&quot;</span><span class="fu">:</span> <span class="dv">55845</span><span class="fu">,</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;heat&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;spec_heat&quot;</span><span class="fu">:</span> <span class="dv">500</span><span class="fu">,</span> <span class="dt">&quot;melting_point&quot;</span><span class="fu">:</span> <span class="dv">12718</span><span class="fu">,</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;boiling_point&quot;</span><span class="fu">:</span> <span class="dv">14968</span><span class="fu">,</span> <span class="dt">&quot;ignite_point&quot;</span><span class="fu">:</span> <span class="kw">null</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">},</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;strength&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;yield&quot;</span><span class="fu">:</span>           <span class="fu">{</span> <span class="dt">&quot;IMPACT&quot;</span><span class="fu">:</span> <span class="dv">2590000</span><span class="fu">,</span> <span class="dt">&quot;COMPRESSIVE&quot;</span><span class="fu">:</span> <span class="dv">888000</span><span class="fu">,</span> <span class="dt">&quot;TENSILE&quot;</span><span class="fu">:</span> <span class="dv">740000</span><span class="fu">,</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>                         <span class="dt">&quot;TORSION&quot;</span><span class="fu">:</span> <span class="dv">427239</span><span class="fu">,</span> <span class="dt">&quot;SHEAR&quot;</span><span class="fu">:</span> <span class="dv">427239</span><span class="fu">,</span> <span class="dt">&quot;BENDING&quot;</span><span class="fu">:</span> <span class="dv">740000</span> <span class="fu">},</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;fracture&quot;</span><span class="fu">:</span>        <span class="fu">{</span> <span class="dt">&quot;IMPACT&quot;</span><span class="fu">:</span> <span class="dv">3745000</span><span class="fu">,</span> <span class="dt">&quot;COMPRESSIVE&quot;</span><span class="fu">:</span> <span class="dv">1284000</span><span class="fu">,</span> <span class="dt">&quot;TENSILE&quot;</span><span class="fu">:</span> <span class="dv">1070000</span><span class="fu">,</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>                         <span class="dt">&quot;TORSION&quot;</span><span class="fu">:</span> <span class="dv">617765</span><span class="fu">,</span> <span class="dt">&quot;SHEAR&quot;</span><span class="fu">:</span> <span class="dv">617765</span><span class="fu">,</span> <span class="dt">&quot;BENDING&quot;</span><span class="fu">:</span> <span class="dv">1070000</span> <span class="fu">},</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;strain_at_yield&quot;</span><span class="fu">:</span> <span class="fu">{</span> <span class="dt">&quot;IMPACT&quot;</span><span class="fu">:</span> <span class="dv">1551</span><span class="fu">,</span> <span class="dt">&quot;COMPRESSIVE&quot;</span><span class="fu">:</span> <span class="dv">532</span><span class="fu">,</span> <span class="dt">&quot;TENSILE&quot;</span><span class="fu">:</span> <span class="dv">370</span><span class="fu">,</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>                         <span class="dt">&quot;TORSION&quot;</span><span class="fu">:</span> <span class="dv">555</span><span class="fu">,</span> <span class="dt">&quot;SHEAR&quot;</span><span class="fu">:</span> <span class="dv">555</span><span class="fu">,</span> <span class="dt">&quot;BENDING&quot;</span><span class="fu">:</span> <span class="dv">370</span> <span class="fu">},</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;max_edge&quot;</span><span class="fu">:</span> <span class="dv">10384</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">},</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;reaction_classes&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;reaction_products&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;material_flags&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;ITEMS_METAL&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span> <span class="dt">&quot;ITEMS_HARD&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span> <span class="dt">&quot;ITEMS_BARRED&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;ITEMS_SCALED&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span> <span class="dt">&quot;ITEMS_WEAPON&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span> <span class="dt">&quot;ITEMS_WEAPON_RANGED&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;ITEMS_AMMO&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span> <span class="dt">&quot;ITEMS_DIGGER&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span> <span class="dt">&quot;ITEMS_ARMOR&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;ITEMS_ANVIL&quot;</span><span class="fu">:</span> <span class="kw">true</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">},</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;display_color&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="dv">0</span><span class="ot">,</span> <span class="dv">7</span><span class="ot">,</span> <span class="dv">1</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;build_color&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="dv">0</span><span class="ot">,</span> <span class="dv">7</span><span class="ot">,</span> <span class="dv">1</span><span class="ot">]</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+<p>Against the tokens you already know:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>JSON</th>
+<th>Raw equivalent</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>key</code></td>
+<td><code>[INORGANIC:X]</code></td>
+<td>Prefix added for you.</td>
+</tr>
+<tr class="even">
+<td><code>name</code></td>
+<td><code>[STATE_NAME_ADJ:ALL_SOLID:x]</code></td>
+<td>Liquid and gas become “molten x” / “boiling x” automatically.</td>
+</tr>
+<tr class="odd">
+<td><code>names</code></td>
+<td>the other <code>STATE_NAME_ADJ</code> lines</td>
+<td>Optional: <code>{solid, liquid, gas, powder, paste, pressed}</code>.
+Needed whenever the automatic form would read wrong. An acid whose solid
+name is “frozen oil of vitriol” must not become “molten frozen oil of
+vitriol”. All 39 of your chemicals use this.</td>
+</tr>
+<tr class="even">
+<td><code>material_class</code></td>
+<td><code>USE_MATERIAL_TEMPLATE</code></td>
+<td><code>METAL</code>, <code>STONE</code>, <code>CERAMIC</code>,
+<code>GEM</code>, <code>GLASS</code>, <code>RAW</code>. Not a one-to-one
+mapping; see below.</td>
+</tr>
+<tr class="odd">
+<td><code>color</code></td>
+<td><code>[STATE_COLOR:ALL_SOLID:X]</code></td>
+<td>A descriptor name. Your custom palette resolves fine.</td>
+</tr>
+<tr class="even">
+<td><code>liquid_color</code>, <code>gas_color</code></td>
+<td><code>[STATE_COLOR:LIQUID:X]</code></td>
+<td>Metals want <code>RED</code> (that’s what
+<code>METAL_TEMPLATE</code> gives them). Omit to reuse
+<code>color</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>display_color</code>, <code>build_color</code></td>
+<td><code>[DISPLAY_COLOR:f:b:r]</code></td>
+<td>ANSI triples, 0-7. <strong>A different number space from
+<code>color</code></strong>: one is a descriptor index, the other is a
+terminal colour. Don’t cross them.</td>
+</tr>
+<tr class="even">
+<td><code>tile</code></td>
+<td><code>[TILE:n]</code></td>
+<td>Character code.</td>
+</tr>
+<tr class="odd">
+<td><code>value</code></td>
+<td><code>[MATERIAL_VALUE:n]</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>heat.*</code></td>
+<td><code>[SPEC_HEAT]</code>, <code>[MELTING_POINT]</code>, …</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>strength.*</code></td>
+<td><code>[IMPACT_YIELD]</code> and friends</td>
+<td>Six axes each for yield, fracture and strain.</td>
+</tr>
+<tr class="even">
+<td><code>reaction_classes</code></td>
+<td><code>[REACTION_CLASS:X]</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>reaction_products</code></td>
+<td><code>[MATERIAL_REACTION_PRODUCT:ID:INORGANIC:X]</code></td>
+<td><code>[{ &quot;id&quot;: &quot;...&quot;, &quot;mat_id&quot;: &quot;...&quot; }]</code></td>
+</tr>
+<tr class="even">
+<td><code>material_flags</code></td>
+<td><code>[ITEMS_METAL]</code> and friends</td>
+<td><strong>Read the next section.</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="colour-priority-and-caldfirs-metallic">Colour priority, and
+Caldfir’s Metallic</h3>
+<p><code>color</code> and <code>fallback_colors</code> are a priority
+chain. The engine tries <code>color</code> first, then each entry in
+<code>fallback_colors</code> in order, and takes the first one that
+resolves against the colour descriptors loaded in the game.</p>
+<p>That gives you soft Metallic support with no detection and no
+configuration. Name the Metallic colour first and your own as the
+fallback:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="er">&quot;color&quot;:</span> <span class="er">&quot;METALLIC_STEEL&quot;,</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="er">&quot;fallback_colors&quot;:</span> <span class="ot">[</span><span class="st">&quot;EMENRIL&quot;</span><span class="ot">,</span><span class="st">&quot;BLUE-GRAY&quot;</span><span class="ot">]</span></span></code></pre></div>
+<p>With Metallic loaded, the material comes out
+<code>METALLIC_STEEL</code>. Without it, that name doesn’t resolve, the
+chain falls through, and it comes out <code>EMENRIL</code>. If that
+fails too for some reason, it next becomes <code>BLUE-GRAY</code>. The
+same JSON works either way, and a player who adds or removes Metallic
+later just gets the next colour in priority on next load. You can chain
+as many as you like.</p>
+<p><strong>End the chain with something that definitely exists.</strong>
+If nothing in it resolves you get an arbitrary default rather than an
+error, which is a frustrating thing to debug. A vanilla colour as the
+last entry costs nothing.</p>
+<p><strong>This works with Metallic, and I checked.</strong> Its
+<code>descriptor_color_1metallic.txt</code> and
+<code>descriptor_color_2divine.txt</code> are
+<code>[OBJECT:DESCRIPTOR_COLOR]</code> files, so all 52
+<code>METALLIC_*</code> names are real colour descriptors and the chain
+resolves them exactly like your own palette. No caveat.</p>
+<p><strong>Nothing was pre-loaded, because nothing could be.</strong>
+All 16 of your <code>METALLIC_*</code> recommendations sit on minerals
+or <code>WROUGHT_IRON</code>, and every one of them stayed in raws, and
+the fallback chain only exists for injected materials. Those stay manual
+<code>[STATE_COLOR:...]</code> edits, the way you have them now.</p>
+<p>None of your 29 injected alloys currently uses a Metallic colour, so
+the chain is available and completely unused. If you’d like
+<code>DAMASCUS_STEEL</code> to match Metallic’s steel when it’s loaded,
+that’s <code>&quot;color&quot;: &quot;METALLIC_STEEL&quot;</code> with
+<code>&quot;fallback_colors&quot;: [&quot;DAMASCUS&quot;]</code> and nothing else.</p>
+<p><strong>One live collision.</strong> You and Metallic both recolour
+<code>PIG_IRON</code>: <code>DARKSTEEL</code> against
+<code>METALLIC_PIG_IRON</code>. Both are raw
+<code>SELECT_INORGANIC</code> edits, so whichever loads last wins, and
+neither of you can do anything about it from within your own mod. It’s
+the only overlap; Metallic recolours 32 vanilla materials and you touch
+7, and <code>PIG_IRON</code> is the single intersection.</p>
+<p><strong>This is the clearest argument for the editing
+engine.</strong> Your Metallic recommendations are manual comments
+precisely because those materials are raw edits, and the engine can only
+add. Once it can edit existing materials, those
+<code>SELECT_INORGANIC</code> recolours could become injected edits
+carrying a fallback chain, and Metallic compatibility would just happen,
+on both sides, with no comments to action and no load-order coin flip on
+<code>PIG_IRON</code>.</p>
+<h3 id="two-places-df-habits-will-mislead-you">Two places DF habits will
+mislead you</h3>
+<p><strong><code>material_class</code> is not
+<code>USE_MATERIAL_TEMPLATE</code>.</strong> A template gives you a set
+of defaults you then override. A class here applies a <em>preset</em>,
+and <code>METAL</code> turns on the entire capability set: weapons,
+armour, ammo, anvil, all of it.</p>
+<p>Your metals aren’t uniform. Of the 46 you wrote, only 22 grant
+weapons and 9 grant anvil, and the ferroalloys grant nothing at all. So
+<strong>every material lists every flag explicitly, <code>true</code> or
+<code>false</code>.</strong> Leaving one out doesn’t withhold it the way
+omitting a token would: the preset grants it. Add a new ferroalloy
+without the flag block and it’ll come out forgeable into armour.</p>
+<p><strong>There’s no inheritance.</strong> Whatever a template would
+have given you (spec heat, densities, the whole strength block) has to
+be written out. The engine clones a donor material to get a valid
+structure, then blanks everything meaningful. If you leave a field out
+you get that donor value, either a wiped value or worse yet a cloned
+value which survived the wipe. The effect of this would depend on what
+object RM evaluated to be the best match on load, not on a value derived
+from any meaningful template.</p>
+<hr />
+<h2 id="adding-a-reaction">Adding a reaction</h2>
+<p>One entry per <code>[REACTION:...]</code>.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;key&quot;</span><span class="fu">:</span> <span class="st">&quot;GRIND_SALTPETER&quot;</span><span class="fu">,</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;grind niter into potash saltpeter&quot;</span><span class="fu">,</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;building&quot;</span><span class="fu">:</span> <span class="st">&quot;MILL&quot;</span><span class="fu">,</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;skill&quot;</span><span class="fu">:</span> <span class="st">&quot;MILLING&quot;</span><span class="fu">,</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;fuel&quot;</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;category&quot;</span><span class="fu">:</span> <span class="st">&quot;ARGMOD_CAT_MILL_MINERAL_REAGENT&quot;</span><span class="fu">,</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;permissions&quot;</span><span class="fu">:</span> <span class="fu">{</span> <span class="dt">&quot;mode&quot;</span><span class="fu">:</span> <span class="st">&quot;ENTITY_CODE&quot;</span><span class="fu">,</span> <span class="dt">&quot;entities&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;MOUNTAIN&quot;</span><span class="ot">]</span> <span class="fu">},</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;reaction_flags&quot;</span><span class="fu">:</span> <span class="fu">{</span> <span class="dt">&quot;fortress_mode&quot;</span><span class="fu">:</span> <span class="kw">true</span> <span class="fu">},</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;reagents&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span> <span class="dt">&quot;code&quot;</span><span class="fu">:</span> <span class="st">&quot;A&quot;</span><span class="fu">,</span>   <span class="dt">&quot;type&quot;</span><span class="fu">:</span> <span class="st">&quot;BOULDER&quot;</span><span class="fu">,</span> <span class="dt">&quot;quantity&quot;</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span> <span class="dt">&quot;mat_id&quot;</span><span class="fu">:</span> <span class="st">&quot;SALTPETER&quot;</span> <span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span> <span class="dt">&quot;code&quot;</span><span class="fu">:</span> <span class="st">&quot;bag&quot;</span><span class="fu">,</span> <span class="dt">&quot;type&quot;</span><span class="fu">:</span> <span class="st">&quot;BAG&quot;</span><span class="fu">,</span>     <span class="dt">&quot;quantity&quot;</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;flags&quot;</span><span class="fu">:</span> <span class="fu">{</span> <span class="dt">&quot;empty&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span> <span class="dt">&quot;preserve&quot;</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>                 <span class="dt">&quot;does_not_determine_product_amount&quot;</span><span class="fu">:</span> <span class="kw">true</span> <span class="fu">}</span> <span class="fu">}</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;products&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span> <span class="dt">&quot;type&quot;</span><span class="fu">:</span> <span class="st">&quot;POWDER_MISC&quot;</span><span class="fu">,</span> <span class="dt">&quot;mat_id&quot;</span><span class="fu">:</span> <span class="st">&quot;ARGMOD_POTASSIUM_NITRATE&quot;</span><span class="fu">,</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;count&quot;</span><span class="fu">:</span> <span class="dv">4</span><span class="fu">,</span> <span class="dt">&quot;dimension&quot;</span><span class="fu">:</span> <span class="dv">150</span><span class="fu">,</span> <span class="dt">&quot;to_container&quot;</span><span class="fu">:</span> <span class="st">&quot;bag&quot;</span> <span class="fu">}</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+<p><code>code</code> is the reagent name you’d write in raws, and
+<code>contains</code>, <code>to_container</code> and
+<code>get_material_product</code> refer back to it. <strong>Codes must
+be unique within a reaction.</strong> DF tolerates duplicates when
+nothing references them; the RM engine doesn’t, because it resolves
+those links by name.</p>
+<p><code>mat_id</code> takes a full id: <code>ARGMOD_</code> prefix for
+injected materials, bare id for vanilla or raw ones.
+<code>ARGMOD_POTASSIUM_NITRATE</code> but plain
+<code>SALTPETER</code>.</p>
+<h3 id="reagent-types">Reagent types</h3>
+<p>Rather than writing item and material tokens, you pick a type. The
+engine fills in the item type, material type and index behind it.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Equivalent raw reagent</th>
+<th>Needs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>METAL_BAR</code></td>
+<td><code>BAR:NO_SUBTYPE:METAL:X</code></td>
+<td><code>mat_id</code></td>
+</tr>
+<tr class="even">
+<td><code>BAR_ANY</code></td>
+<td><code>BAR:NONE:NONE:NONE</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>BAR_POTASH</code></td>
+<td><code>BAR:NONE:POTASH:NONE</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>COAL</code></td>
+<td><code>BAR:NO_SUBTYPE:COAL:NO_MATGLOSS</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>BOULDER</code></td>
+<td><code>BOULDER:NO_SUBTYPE:INORGANIC:X</code></td>
+<td><code>mat_id</code></td>
+</tr>
+<tr class="even">
+<td><code>BOULDER_ANY</code></td>
+<td><code>BOULDER:NONE:NONE:NONE</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>ORE_OF</code></td>
+<td>boulder carrying <code>[METAL_ORE:X]</code></td>
+<td><code>metal_id</code></td>
+</tr>
+<tr class="even">
+<td><code>FLUX</code></td>
+<td>flux stone</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>POWDER</code></td>
+<td><code>POWDER_MISC:NONE:INORGANIC:X</code></td>
+<td><code>mat_id</code> optional</td>
+</tr>
+<tr class="even">
+<td><code>POWDER_ANY</code></td>
+<td><code>POWDER_MISC:NONE:INORGANIC:NONE</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>LIQUID</code></td>
+<td><code>LIQUID_MISC:NONE:NONE:NONE</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>LIQUID_INORGANIC</code></td>
+<td><code>LIQUID_MISC:NONE:INORGANIC:X</code></td>
+<td><code>mat_id</code></td>
+</tr>
+<tr class="odd">
+<td><code>LIQUID_INORGANIC_ANY</code></td>
+<td><code>LIQUID_MISC:NONE:INORGANIC:NONE</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>WATER</code></td>
+<td><code>LIQUID_MISC:NONE:WATER:NONE</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>ROUGH</code> / <code>ROUGH_ANY</code></td>
+<td><code>ROUGH:NONE:INORGANIC:X</code> / <code>:NONE</code></td>
+<td><code>mat_id</code> for the first</td>
+</tr>
+<tr class="even">
+<td><code>BLOCKS</code></td>
+<td><code>BLOCKS:NONE:INORGANIC:X</code></td>
+<td><code>mat_id</code></td>
+</tr>
+<tr class="odd">
+<td><code>ROCK</code></td>
+<td>small rock</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>BAG</code>, <code>BUCKET</code>, <code>BARREL</code>,
+<code>JUG</code></td>
+<td>the matching container</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>CONTAINER</code></td>
+<td><code>NONE:NONE:NONE:NONE</code></td>
+<td>Use with <code>contains</code>.</td>
+</tr>
+<tr class="even">
+<td><code>BODY_PART</code></td>
+<td>untyped + <code>[USE_BODY_COMPONENT]</code></td>
+<td>Pair with <code>bone</code> / <code>shell</code> / <code>horn</code>
+flags.</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>INORGANIC:NONE</code></strong> In the raws it’s
+shorthand for “any inorganic of this item type, narrowed by
+<code>REACTION_CLASS</code>”, used in ArgMOD 36 times. It maps to the
+<code>_ANY</code> variant of the desired type in the module engine.
+Using the strict type with no <code>mat_id</code> is rejected rather
+than treated as a wildcard, because that ambiguity is how a reagent
+silently becomes “anything at all”.</p>
+<h3 id="reagent-flags">Reagent flags</h3>
+<p><code>reaction_class</code>,
+<code>has_material_reaction_product</code> and <code>metal_id</code> sit
+directly on the reagent. Everything else goes in a <code>flags</code>
+object:</p>
+<p><code>preserve</code>, <code>empty</code>,
+<code>does_not_determine_product_amount</code>,
+<code>in_container</code>, <code>unrotten</code>,
+<code>glass_material</code>, <code>sand_bearing</code>,
+<code>body_part</code>, <code>bone</code>, <code>shell</code>,
+<code>horn</code>, <code>fire_safe</code>, <code>magma_safe</code>,
+<code>non_economic</code>, <code>building_material</code>,
+<code>allow_melt_dump</code>.</p>
+<p>One has no raw equivalent:
+<strong><code>in_container</code></strong>. DF sets this for you when it
+sees another reagent’s <code>[CONTAINS:]</code> during parsing. Nothing
+parses the JSON that way, so you write it yourself: every powder that
+lives in a bag needs <code>&quot;in_container&quot;: true</code>, and the bag
+needs <code>&quot;contains&quot;: &quot;&lt;that code&gt;&quot;</code>. Miss it and the
+reaction won’t find its reagent.</p>
+<h3 id="product-types">Product types</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>BAR</code></td>
+<td><code>BAR:NO_SUBTYPE:METAL:X</code></td>
+</tr>
+<tr class="even">
+<td><code>BAR_COAL</code></td>
+<td><code>BAR:NO_SUBTYPE:COAL:COKE</code></td>
+</tr>
+<tr class="odd">
+<td><code>BAR_POTASH</code></td>
+<td><code>BAR:NONE:POTASH:NONE</code></td>
+</tr>
+<tr class="even">
+<td><code>POWDER_MISC</code></td>
+<td><code>POWDER_MISC:NONE:INORGANIC:X</code></td>
+</tr>
+<tr class="odd">
+<td><code>LIQUID_MISC</code></td>
+<td>water</td>
+</tr>
+<tr class="even">
+<td><code>LIQUID_MISC_INORGANIC</code></td>
+<td>an acid or other inorganic liquid</td>
+</tr>
+<tr class="odd">
+<td><code>BOULDER</code>, <code>BLOCKS</code>, <code>ROUGH</code>,
+<code>ROCK</code></td>
+<td>as named</td>
+</tr>
+</tbody>
+</table>
+<p>Every product names its material exactly one way:
+<code>mat_id</code>, <code>get_material_same</code> (a reagent code), or
+<code>get_material_product</code>
+(<code>{ &quot;reagent_code&quot;: &quot;...&quot;, &quot;product_code&quot;: &quot;...&quot; }</code>, your
+<code>GET_MATERIAL_FROM_REAGENT</code>). For builtins, name the builtin:
+<code>&quot;mat_id&quot;: &quot;POTASH&quot;</code>, <code>&quot;mat_id&quot;: &quot;COKE&quot;</code>. It won’t
+resolve as an inorganic, and that’s fine; the material type comes from
+the product type itself.</p>
+<p><code>count</code>, <code>dimension</code>, <code>probability</code>
+and <code>to_container</code> mean what you’d expect.</p>
+<h3 id="buildings-and-skills">Buildings and skills</h3>
+<p>Buildings: <code>SMELTER</code>, <code>KILN</code>,
+<code>MILL</code>, <code>ASHERY</code>, <code>SOAP_MAKER</code>,
+<code>CHEMIST</code>, <code>FORGE</code>, <code>MASON</code>,
+<code>CRAFTSMAN</code>, <code>JEWELER</code>,
+<code>GLASS_FURNACE</code>, <code>NONE</code>.</p>
+<p><code>MILL</code> is quern <strong>and</strong> millstone in one
+entry, since you list both on all 41 of your grinding reactions. I’ll
+might break this up in future updates.</p>
+<p><code>CHEMIST</code> works because the engine looks your workshop up
+by its code string at runtime; the building itself stays in raws. If you
+add a second custom workshop, it needs a one-line table entry on the
+engine side before reactions can point at it.</p>
+<p>Skills are the usual names: <code>SMELT</code>, <code>MILLING</code>,
+<code>POTASH_MAKING</code>, <code>LYE_MAKING</code>,
+<code>SOAP_MAKING</code>, <code>MASONRY</code>, and so on.</p>
+<h3 id="permissions-and-fortress_mode">Permissions and
+<code>fortress_mode</code></h3>
+<p>These are two separate switches that both sound like “can this be
+used”. Setting one doesn’t change the other.</p>
+<p><strong><code>reaction_flags.fortress_mode</code></strong> is a flag
+on the reaction itself, the direct equivalent of
+<code>[FORTRESS_MODE_ENABLED]</code>. It’s what makes the reaction
+usable in fortress mode at all. <strong>Leave it <code>true</code> on
+anything you want players to use.</strong> All 201 of your reactions
+that had the token still have it.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="er">&quot;reaction_flags&quot;:</span> <span class="fu">{</span> <span class="dt">&quot;fortress_mode&quot;</span><span class="fu">:</span> <span class="kw">true</span> <span class="fu">}</span></span></code></pre></div>
+<p><strong><code>permissions</code></strong> replaces
+<code>[PERMITTED_REACTION:...]</code> in the entity file. It controls
+which civilisations the engine grants the reaction to. Four modes:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><code>mode</code></th>
+<th>What the engine does</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>&quot;ENTITY_CODE&quot;</code></td>
+<td>Grants it to the entity raws you list. Needs an
+<code>entities</code> array. This is the direct translation of your
+entity file.</td>
+</tr>
+<tr class="even">
+<td><code>&quot;NONE&quot;</code></td>
+<td>Grants it to nobody.</td>
+</tr>
+<tr class="odd">
+<td><code>&quot;ALL&quot;</code></td>
+<td>Grants it to every civilisation.</td>
+</tr>
+<tr class="even">
+<td><code>&quot;AUTO&quot;</code></td>
+<td>Decides per civilisation from their capabilities, e.g. only civs
+that can work metal get smelter reactions.</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb6"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="er">&quot;permissions&quot;:</span> <span class="fu">{</span> <span class="dt">&quot;mode&quot;</span><span class="fu">:</span> <span class="st">&quot;ENTITY_CODE&quot;</span><span class="fu">,</span> <span class="dt">&quot;entities&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="st">&quot;MOUNTAIN&quot;</span><span class="ot">,</span> <span class="st">&quot;PLAINS&quot;</span><span class="ot">,</span> <span class="st">&quot;EVIL&quot;</span><span class="ot">]</span> <span class="fu">}</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="er">&quot;permissions&quot;:</span> <span class="fu">{</span> <span class="dt">&quot;mode&quot;</span><span class="fu">:</span> <span class="st">&quot;NONE&quot;</span> <span class="fu">}</span></span></code></pre></div>
+<p><strong>If you only care that it works in your fort:</strong> set
+<code>fortress_mode</code> true and you’re done.
+<code>&quot;mode&quot;: &quot;NONE&quot;</code> is a perfectly valid setting and is what 74
+of your reactions currently have, including the ore-weathering grinds
+and <code>PURPLE_GOLD_MAKING</code>, all of which work fine in a fort. A
+reaction with <code>fortress_mode</code> true and
+<code>&quot;mode&quot;: &quot;NONE&quot;</code> is not misconfigured.</p>
+<p><strong>If you care what other civilisations do with it,</strong>
+that’s what <code>permissions</code> is for, and here the ground gets
+less certain, so I’d rather flag it than let you build on it:</p>
+<ul>
+<li>Permits <em>appear</em> to apply to every civ of an entity type
+rather than just the player’s. <code>[PERMITTED_REACTION:...]</code>
+sits on the entity raw, and <code>MOUNTAIN</code> is one shared
+definition every mountain civilisation points at, so there’s no per-civ
+granularity to grant even in principle. I spent a long time on this and
+landed on “it must be all mountain civs”, but I never proved it.</li>
+<li>Whether this remains true on <code>fortress_mode</code> alone and
+NPC civs then <em>act</em> on it (produce these items, bring them to
+trade) is something I haven’t yet confirmed firsthand.</li>
+</ul>
+<p>Your content splits roughly in half here: 128 reactions carry entity
+permits and 74 don’t, following when things were written rather than any
+design line. Since <code>fortress_mode</code> covers your own fort
+either way, that inconsistency has probably never been visible in
+play.</p>
+<h3 id="categories">Categories</h3>
+<p>Your 20 injected categories sit at the bottom of the reactions file
+with a bare <code>key</code>. A reaction refers to one as
+<code>ARGMOD_CAT_&lt;key&gt;</code>.</p>
+<p>Six categories are shared with reactions that stayed raw:
+<code>COKING</code>, <code>IRONWORKING</code>, <code>STEELMAKING</code>,
+<code>LIME_CALCINATION</code>, <code>NONFERROUS_ALLOYING</code> and
+<code>PRECIOUS_METAL_ALLOYING</code>. Injected reactions in those six
+use the <strong>bare raw id</strong> with no prefix, so both halves land
+in the same workshop submenu instead of two identically-named ones.</p>
+<p>I also re-declared <code>[CATEGORY_NAME:Coking]</code> and
+<code>[CATEGORY_NAME:Ironworking]</code> in your raws. Both names were
+originally declared on reactions that are now injected, so removing
+those reactions took the display name with them.</p>
+<hr />
+<h2 id="checking-your-work-before-you-launch">Checking your work before
+you launch</h2>
+<p><code>preflight.py</code> reads both JSON files and checks them
+against every rule the engine enforces, printing exactly what’s wrong
+and where. It reads the engine’s own type tables rather than a copy, so
+it can’t drift out of date as the engine gains types.</p>
+<p>A pass means the module will load. It won’t catch design mistakes (a
+reaction nothing can reach, or a material nothing produces), but it
+catches every structural error, and it’s a second rather than a DF
+launch.</p>
+<h3 id="running-it">Running it</h3>
+<p>It’s a Python script, and Windows doesn’t ship with Python. If you
+already have it, skip to the file list.</p>
+<p><strong>Getting Python.</strong> Download it from <a href="https://www.python.org/downloads/">python.org/downloads</a> and
+run the installer. The only thing that matters is ticking <strong>“Add
+python.exe to PATH”</strong> on the first screen. It’s off by default
+and it’s the reason the command below wouldn’t otherwise work.
+Everything else can stay at its defaults. You don’t need to touch
+PowerShell’s execution policy; that applies to <code>.ps1</code>
+scripts, not this.</p>
+<p><strong>Put four files in one folder</strong>, anywhere, it doesn’t
+have to be near the mod:</p>
+<pre><code>preflight.py
+argmod_materials.json
+argmod_reactions.json
+refinish-module-types.lua</code></pre>
+<p>The last one comes from the Refinish Metal install and is how the
+script knows what the engine currently accepts. <strong>Take a fresh
+copy whenever RM updates</strong>, or you’ll get failures for reagent
+types that do actually exist. The script is only ever as current as that
+file.</p>
+<p><strong>Run it.</strong> In that folder, hold Shift and right-click
+on empty space → <em>Open PowerShell window here</em>. (Or click the
+folder’s address bar, type <code>cmd</code>, and press Enter.) Then:</p>
+<pre><code>python preflight.py</code></pre>
+<p><strong>Reading the output.</strong> A pass looks like this:</p>
+<pre><code>engine tables read from refinish-module-types.lua: 24 reagent types, 10 product types, 12 buildings, 25 skills
+
+PREFLIGHT PASSED: 68 materials, 202 reactions, 20 categories</code></pre>
+<p>A failure names the reaction, the reagent and the problem, so you can
+go straight to it:</p>
+<pre><code>PREFLIGHT FAILED: 1 problem(s):
+
+  reactions[66] (PITCHBLENDE_REDUCTION).reagents[3] (caustic): type &#39;LIQUID_INORGANIC&#39; requires mat_id</code></pre>
+<p>If it says <code>python</code> isn’t recognised as a command, the
+PATH box didn’t get ticked. Either rerun the installer and choose
+<em>Modify</em>, or try <code>py preflight.py</code> instead, which
+usually works regardless.</p>
+<h3 id="one-thing-to-be-aware-of-on-the-chemistry-side">One thing to be
+aware of on the chemistry side</h3>
+<p>The engine picks a donor material and a template reaction for
+everything it injects by scoring candidates from the loaded game. That
+scoring was built around metals and dusts, which is what the mod
+originally did, and it shows: for your chemicals and chemist reactions
+the winning scores are low. The RAW-class donor scores a 3; the chemist
+reactions land on things like <code>PRESS_OIL</code> and
+<code>ACACIA_BARK_DYE</code> in the 50-70 range, against 85 for a
+typical smelter reaction.</p>
+<p>Everything I’ve tested from that side behaves correctly, so low
+scores aren’t evidence of a problem unless you notice things aren’t
+behaving as intended. I don’t yet know whether the scoring is simply
+weak for this kind of content, or whether vanilla genuinely has nothing
+that’s a close structural match for a chemist reaction. If something in
+the chemistry behaves oddly in a way that isn’t a reagent problem, tell
+me. That’s the first place I’d look, and it’s my end to fix rather than
+yours.</p>
+<hr />
+<h2 id="what-needs-engine-changes">What needs engine changes</h2>
+<p>These aren’t things you can do from JSON, so RM updates would be
+required before designing around them:</p>
+<ul>
+<li><strong>New reagent or product types.</strong> The tables above are
+the whole vocabulary. <code>GLOB</code>, plant and creature materials,
+tools other than jugs. Each needs a new entry.</li>
+<li><strong>New buildings.</strong> Vanilla ones are a table entry. A
+second custom workshop of yours works the same way the chemist does, but
+still needs that entry. Injecting buildings outright is probably
+possible; I just haven’t had reason to build it without encountering a
+building bottleneck.</li>
+<li><strong>Material properties not listed.</strong>
+<code>absorption</code> isn’t exposed, for instance.</li>
+<li><strong>Graphics.</strong> Bindings are parsed from raws and name
+materials directly, so an injected material can’t carry a custom tile.
+That’s the only reason the ferroalloys stayed behind.</li>
+<li><strong>Editing or removing existing content.</strong> The engine
+only <em>adds</em>. Anything you <code>CUT</code> or <code>SELECT</code>
+has to stay in raws. This is the big one; see the last section.</li>
+</ul>
+<hr />
+<h2 id="bugs-i-found-while-porting">Bugs I found while porting</h2>
+<p><strong>I ported every one of these exactly as written.</strong> The
+goal was a faithful port: the injected half behaves identically to your
+mod as it stands today, bugs included. I didn’t silently improve
+anything, because a port that quietly changes behaviour is worse than
+one that doesn’t, because you’d have no way to tell which differences
+were deliberate.</p>
+<p>These are only things that appear to be <strong>mechanically</strong>
+broken. I’ve avoided treating things as bugs because there may be
+elements of design choice, but I wanted to point these ones out just in
+case you don’t know:</p>
+<h3 id="ferrotungsten_making-names-both-reagents-a">1.
+<code>FERROTUNGSTEN_MAKING</code> names both reagents
+<code>A</code></h3>
+<p>DF tolerates it because nothing in that reaction refers to a code,
+but it’s a latent trap: the moment you add a <code>CONTAINS</code> or
+<code>PRODUCT_TO_CONTAINER</code> there it breaks. The RM engine
+requires unique codes, so during the port the second one became
+<code>A2</code>.</p>
+<p><strong>Fix in <code>argmod_reactions.json</code>:</strong> change
+that reagent’s <code>&quot;code&quot;: &quot;A2&quot;</code> to <code>&quot;code&quot;: &quot;B&quot;</code>, or
+whatever element you choose.</p>
+<h3 id="salt_glaze-is-referenced-but-not-present">2.
+<code>SALT_GLAZE</code> is referenced but not present</h3>
+<p><code>SODIUM_CHLORIDE</code> and <code>POTASSIUM_CHLORIDE</code> both
+declare a <code>GLAZE_MAT</code> reaction product pointing at
+<code>SALT_GLAZE</code>, and it isn’t currently in the core mod. My
+guess is it went with the glass and ceramics content when you split that
+off, and since the missing element breaks nothing it’s just a compromise
+to reduce raw footprint if someone chooses not to install Glass &amp;
+Ceramics.</p>
+<p>Flagging it in case it’s news. <strong>If you want it back, fix in
+<code>argmod_materials.json</code></strong> since both those materials
+are injected: add <code>SALT_GLAZE</code> as an injected material and
+point at <code>ARGMOD_SALT_GLAZE</code>, or drop the two
+<code>reaction_products</code> entries to stop pointing at a ghost.</p>
+<p>Worth saying: If you like how this port works, I’d be glad to port
+the remaining offshoots. If the footprint can be reduced enough you
+might even be able to run the whole suite with less impact than the core
+mod in raw format. That’s my goal anyway.</p>
+<h3 id="seven-acids-have-a-malformed-state_colorclear">3. Seven acids
+have a malformed <code>[STATE_COLOR:CLEAR]</code></h3>
+<p><code>AMMONIA_SOLUTION</code>, <code>SODIUM_HYDROXIDE</code>,
+<code>SULFURIC_ACID</code>, <code>NITRIC_ACID</code>,
+<code>HYDROCHLORIC_ACID</code>, <code>HYDROFLUORIC_ACID</code> and
+<code>AQUA_REGIA</code> are all missing the state selector, which DF
+shouldn’t be able to parse. I’d expect that means your intended ivory,
+cream and vermilion never took effect and those materials have been
+falling back to the template’s <code>CLEAR</code>, but I didn’t verify
+that in game, so treat it as likely rather than established. The port
+carries <code>CLEAR</code> either way, matching the token as
+written.</p>
+<p><strong>Fix in <code>argmod_materials.json</code></strong>, and it’s
+easier than it was in raws, because JSON has no malformed-token failure
+mode, so there’s no selector to forget:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="er">&quot;color&quot;:</span> <span class="er">&quot;IVORY&quot;</span></span></code></pre></div>
+<hr />
+<h2 id="reducing-your-raw-footprint">Reducing your raw footprint</h2>
+<p>68 of your 98 non-spawning materials are injected. The other 30 are
+held back, each for a specific structural reason:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Held</th>
+<th>Why</th>
+<th>Recoverable?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>11</td>
+<td><code>MATERIAL_REACTION_PRODUCT</code> in the minerals file names
+them</td>
+<td>with a tradeoff</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>graphics files bind tiles to them</td>
+<td>not until the engine can inject graphics</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>the 21 cut-and-redefined reactions name them</td>
+<td><strong>only at real risk</strong>, read below</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>they’re cut-and-redefined themselves</td>
+<td>needs the library sorted out</td>
+</tr>
+</tbody>
+</table>
+<p>I want to be straight about all four, including the two where my
+first instinct was wrong.</p>
+<h3 id="cut-and-replace-dont-change-this-yet">Cut-and-replace: don’t
+change this yet</h3>
+<p>My initial idea was that you cut vanilla reactions without redefining
+them and inject your replacements instead, freeing five materials and
+moving 21 reactions into the editable half. Having thought about it
+properly, <strong>I don’t think you should</strong>, at least not
+now.</p>
+<p><strong>Why you probably cut-and-replace in the first place.</strong>
+I imagine it’s to inherit the vanilla reaction’s behaviour so it lands
+in the right workshop and carries whatever internal state makes it act
+like a real reaction. It’s worth knowing the engine addresses this
+differently: an injected reaction clones a structurally similar vanilla
+reaction as a template (matched on building type, subtype, fuel flag,
+reagent count) and then overwrites its identity and contents. So it gets
+genuine vanilla internals rather than a synthesized shell. Nothing is
+hardcoded. Every injected reaction is scored against the available
+vanilla ones and takes the best match. <code>STEEL_MAKING2</code>
+currently scores <code>BRASS_MAKING</code> highest; the ore reductions
+land on <code>BITUMINOUS_COAL_TO_COKE</code>. Change a reaction’s shape
+and it may well pick a different template next load.</p>
+<p><strong>But I haven’t tested that specific migration.</strong> I
+don’t know first-hand that cutting <code>STEEL_MAKING</code> and
+injecting a replacement cloned from <code>BRONZE_MAKING</code> gives
+identical results. I can’t see why it wouldn’t. This game does
+unintuitive things that break everything in the most infuriating ways,
+so best to approach with caution.</p>
+<p><strong>And the load-order problem is serious.</strong> If you cut
+<code>STEEL_MAKING</code> and your replacement becomes
+<code>ARGMOD_STEEL_MAKING</code>, every other mod that references
+<code>STEEL_MAKING</code> stops resolving. That’s not a footnote. It’s
+your mod silently breaking in other people’s load orders, and then
+you’re stuck writing compatibility patches for all of them. That risk
+alone outweighs five raw entries.</p>
+<p><strong>There’s also a template-supply issue.</strong> The engine
+builds injected reactions by grading and cloning vanilla ones. If you
+cut many smelter reactions and replace them all with injected versions,
+you can starve the engine of clone sources. If you ever do go down this
+road, leave a healthy set of vanilla reactions of each shape intact.</p>
+<p><strong>The real fix is on my end.</strong> The engine only adds; it
+can’t edit. When it can, by redefining an existing reaction in place
+rather than adding a new one, this problem disappears. You’d keep
+<code>STEEL_MAKING</code> under its own id, other mods keep resolving,
+and the definition still lives in JSON. That’s now high on my priority
+list precisely because of this. Until then, cut-and-replace is still the
+right call and I’d leave it alone.</p>
+<h3 id="material_reaction_product-versus-reaction-classes"><code>MATERIAL_REACTION_PRODUCT</code>
+versus reaction classes</h3>
+<p>This one’s a genuine tradeoff.</p>
+<blockquote>
+<p>A <strong><code>REACTION_CLASS</code></strong> on a mineral is just a
+string tag. It names no material, so it creates no dependency, and an
+injected reaction can filter on it freely.</p>
+<p>A <strong><code>MATERIAL_REACTION_PRODUCT</code></strong> on a
+mineral names a specific material. That is a hard reference, and it
+forces the target to stay in raws.</p>
+</blockquote>
+<p>Your sulfide chain uses both patterns for the same job. The per-metal
+reactions filter on <code>REACTION_CLASS:NICKEL_SULFIDE</code> and name
+their product directly. Those are fully injected and cost nothing. The
+generic <code>_ANY_SULFIDE_ORE</code> variants derive their product
+through <code>MATERIAL_REACTION_PRODUCT</code>, and that single choice
+is what pins all 11 oxides and sulfates into raws.</p>
+<p>Dropping those lines and relying on the per-metal reactions would
+free all 11, but at the cost of the generic reaction, which is genuinely
+more elegant.</p>
+<p>There may be a way for the engine to handle generic-reagent reactions
+like this without the raw-side dependency. It’s not solved, and I don’t
+want to promise a shape for it, but it’s on the list. If the generic
+reactions matter to you, leaving this as-is for now will work fine.</p>
+<h3 id="graphics">Graphics</h3>
+<p>Eleven materials stay in raws purely so their bar tiles resolve.
+Graphics bindings are parsed from raws and name materials directly, and
+there’s no way around that until the engine can inject graphics.
+Possible, but a new subsystem rather than a tweak. No action on your
+side.</p>
+<h3 id="chromium-cobalt-manganese"><code>CHROMIUM</code>,
+<code>COBALT</code>, <code>MANGANESE</code></h3>
+<p>These come from Elemental Metals Library, which you cut and redefine.
+Freeing them means dealing with the library itself, either porting it
+for injection or absorbing the relevant definitions into the ArgMOD
+port’s JSON.</p>
+<p>That’s a bigger conversation than this port, and it has the same
+load-order hazard as above: the library exists to be depended on via
+raws, so converting it would break anything else that depends on it.</p>
+<h3 id="if-you-were-starting-from-scratch">If you were starting from
+scratch</h3>
+<ul>
+<li><strong>Anything that spawns in the ground stays raw.</strong> Not
+negotiable.</li>
+<li><strong>Tag minerals with reaction classes rather than pointing them
+at materials.</strong></li>
+<li><strong>Add new content by injection; keep cuts and edits in
+raws</strong>, until the engine can edit, at which point most of this
+gets simpler.</li>
+<li><strong>Keep custom graphics for materials that were always going to
+be raw anyway.</strong></li>
+</ul>
+<p>The split will feel like something to work around at first, because
+ArgMOD wasn’t written with it in mind and the line falls in some odd
+places as a result. Most of the awkwardness can be designed away, but
+not all of it, and some of it is waiting on me rather than you and will
+improve as I continue to develop RM.</p>
+</body>
+</html>

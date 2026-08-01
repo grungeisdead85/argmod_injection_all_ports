@@ -1,0 +1,5205 @@
+{
+  "module": {
+    "prefix": "ARGMOD_",
+    "name": "ArgMOD",
+    "version": "1.0"
+  },
+  "materials": [
+    {
+      "key": "IRIDIUM",
+      "name": "iridium",
+      "material_class": "METAL",
+      "color": "IRIDIUM",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 60,
+      "solid_density": 22562,
+      "liquid_density": 19000,
+      "molar_mass": 192217,
+      "heat": {
+        "spec_heat": 147,
+        "melting_point": 14410,
+        "boiling_point": 18149,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 2800000,
+          "COMPRESSIVE": 800000,
+          "TENSILE": 800000,
+          "TORSION": 176000,
+          "SHEAR": 176000,
+          "BENDING": 800000
+        },
+        "fracture": {
+          "IMPACT": 3500000,
+          "COMPRESSIVE": 1600000,
+          "TENSILE": 1000000,
+          "TORSION": 220000,
+          "SHEAR": 220000,
+          "BENDING": 1000000
+        },
+        "strain_at_yield": {
+          "IMPACT": 769,
+          "COMPRESSIVE": 220,
+          "TENSILE": 153,
+          "TORSION": 85,
+          "SHEAR": 85,
+          "BENDING": 153
+        },
+        "max_edge": 11130
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "NICKEL_OR_NOBLE"
+      ],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": false,
+        "ITEMS_WEAPON_RANGED": false,
+        "ITEMS_AMMO": false,
+        "ITEMS_DIGGER": false,
+        "ITEMS_ARMOR": false,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "NICORIL",
+      "name": "nicoril",
+      "material_class": "METAL",
+      "color": "NICORIL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 12,
+      "solid_density": 8800,
+      "liquid_density": 7980,
+      "molar_mass": 58813,
+      "heat": {
+        "spec_heat": 420,
+        "melting_point": 12619,
+        "boiling_point": 15270,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1925000,
+          "COMPRESSIVE": 660000,
+          "TENSILE": 550000,
+          "TORSION": 317543,
+          "SHEAR": 317543,
+          "BENDING": 550000
+        },
+        "fracture": {
+          "IMPACT": 2275000,
+          "COMPRESSIVE": 780000,
+          "TENSILE": 650000,
+          "TORSION": 375278,
+          "SHEAR": 375278,
+          "BENDING": 650000
+        },
+        "strain_at_yield": {
+          "IMPACT": 1046,
+          "COMPRESSIVE": 359,
+          "TENSILE": 262,
+          "TORSION": 397,
+          "SHEAR": 397,
+          "BENDING": 262
+        },
+        "max_edge": 10400
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "NICKEL_OR_NOBLE"
+      ],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "WHITE_GOLD",
+      "name": "white gold",
+      "material_class": "METAL",
+      "color": "WHITEGOLD",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 35,
+      "solid_density": 16300,
+      "liquid_density": 14375,
+      "molar_mass": 174000,
+      "heat": {
+        "spec_heat": 140,
+        "melting_point": 11710,
+        "boiling_point": 15134,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 193100,
+          "COMPRESSIVE": 193100,
+          "TENSILE": 200000,
+          "TORSION": 130000,
+          "SHEAR": 130000,
+          "BENDING": 200000
+        },
+        "fracture": {
+          "IMPACT": 289700,
+          "COMPRESSIVE": 289700,
+          "TENSILE": 300000,
+          "TORSION": 195000,
+          "SHEAR": 195000,
+          "BENDING": 300000
+        },
+        "strain_at_yield": {
+          "IMPACT": 93,
+          "COMPRESSIVE": 93,
+          "TENSILE": 200,
+          "TORSION": 371,
+          "SHEAR": 371,
+          "BENDING": 200
+        },
+        "max_edge": 10000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": false,
+        "ITEMS_WEAPON_RANGED": false,
+        "ITEMS_AMMO": false,
+        "ITEMS_DIGGER": false,
+        "ITEMS_ARMOR": false,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        5,
+        7,
+        0
+      ],
+      "build_color": [
+        5,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "PURPLE_GOLD",
+      "name": "purple gold",
+      "material_class": "METAL",
+      "color": "HELIOTROPE",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 35,
+      "solid_density": 12659,
+      "liquid_density": 12375,
+      "molar_mass": 126981,
+      "heat": {
+        "spec_heat": 900,
+        "melting_point": 11188,
+        "boiling_point": 14534,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 70000,
+          "COMPRESSIVE": 70000,
+          "TENSILE": 20000,
+          "TORSION": 20000,
+          "SHEAR": 20000,
+          "BENDING": 20000
+        },
+        "fracture": {
+          "IMPACT": 175000,
+          "COMPRESSIVE": 175000,
+          "TENSILE": 50000,
+          "TORSION": 50000,
+          "SHEAR": 50000,
+          "BENDING": 50000
+        },
+        "strain_at_yield": {
+          "IMPACT": 921,
+          "COMPRESSIVE": 921,
+          "TENSILE": 29,
+          "TORSION": 77,
+          "SHEAR": 77,
+          "BENDING": 29
+        },
+        "max_edge": 10000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": false,
+        "ITEMS_WEAPON_RANGED": false,
+        "ITEMS_AMMO": false,
+        "ITEMS_DIGGER": false,
+        "ITEMS_ARMOR": false,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        5,
+        7,
+        0
+      ],
+      "build_color": [
+        5,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "LATTEN",
+      "name": "latten",
+      "material_class": "METAL",
+      "color": "BRASS",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 6,
+      "solid_density": 8690,
+      "liquid_density": 8320,
+      "molar_mass": 71000,
+      "heat": {
+        "spec_heat": 377,
+        "melting_point": 11807,
+        "boiling_point": 13940,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 360500,
+          "COMPRESSIVE": 103000,
+          "TENSILE": 103000,
+          "TORSION": 59467,
+          "SHEAR": 59467,
+          "BENDING": 103000
+        },
+        "fracture": {
+          "IMPACT": 724500,
+          "COMPRESSIVE": 207000,
+          "TENSILE": 207000,
+          "TORSION": 119512,
+          "SHEAR": 119512,
+          "BENDING": 207000
+        },
+        "strain_at_yield": {
+          "IMPACT": 388,
+          "COMPRESSIVE": 111,
+          "TENSILE": 115,
+          "TORSION": 180,
+          "SHEAR": 180,
+          "BENDING": 115
+        },
+        "max_edge": 10000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": false,
+        "ITEMS_WEAPON_RANGED": false,
+        "ITEMS_AMMO": false,
+        "ITEMS_DIGGER": false,
+        "ITEMS_ARMOR": false,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        1
+      ],
+      "build_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "SPELTER",
+      "name": "spelter",
+      "material_class": "METAL",
+      "color": "BRONZE",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 4,
+      "solid_density": 7560,
+      "liquid_density": 7320,
+      "molar_mass": 79562,
+      "heat": {
+        "spec_heat": 377,
+        "melting_point": 10700,
+        "boiling_point": 12940,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 95000,
+          "COMPRESSIVE": 35000,
+          "TENSILE": 35000,
+          "TORSION": 25000,
+          "SHEAR": 25000,
+          "BENDING": 35000
+        },
+        "fracture": {
+          "IMPACT": 150000,
+          "COMPRESSIVE": 50000,
+          "TENSILE": 50000,
+          "TORSION": 30000,
+          "SHEAR": 30000,
+          "BENDING": 50000
+        },
+        "strain_at_yield": {
+          "IMPACT": 142,
+          "COMPRESSIVE": 42,
+          "TENSILE": 35,
+          "TORSION": 66,
+          "SHEAR": 66,
+          "BENDING": 35
+        },
+        "max_edge": 10000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": false,
+        "ITEMS_WEAPON_RANGED": false,
+        "ITEMS_AMMO": false,
+        "ITEMS_DIGGER": false,
+        "ITEMS_ARMOR": false,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        1
+      ],
+      "build_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "BABBIT",
+      "name": "babbitt",
+      "material_class": "METAL",
+      "color": "HARDSTEEL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 3,
+      "solid_density": 10000,
+      "liquid_density": 9320,
+      "molar_mass": 181263,
+      "heat": {
+        "spec_heat": 377,
+        "melting_point": 10418,
+        "boiling_point": 12740,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 91000,
+          "COMPRESSIVE": 24500,
+          "TENSILE": 26000,
+          "TORSION": 15011,
+          "SHEAR": 15011,
+          "BENDING": 26000
+        },
+        "fracture": {
+          "IMPACT": 277550,
+          "COMPRESSIVE": 107200,
+          "TENSILE": 79300,
+          "TORSION": 45784,
+          "SHEAR": 45784,
+          "BENDING": 79300
+        },
+        "strain_at_yield": {
+          "IMPACT": 182,
+          "COMPRESSIVE": 49,
+          "TENSILE": 87,
+          "TORSION": 136,
+          "SHEAR": 136,
+          "BENDING": 87
+        },
+        "max_edge": 10000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": false,
+        "ITEMS_WEAPON_RANGED": false,
+        "ITEMS_AMMO": false,
+        "ITEMS_DIGGER": false,
+        "ITEMS_ARMOR": false,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        0
+      ],
+      "build_color": [
+        7,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "WHITE_BRONZE",
+      "name": "white bronze",
+      "material_class": "METAL",
+      "color": "IVORY",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 6,
+      "solid_density": 8030,
+      "liquid_density": 7420,
+      "molar_mass": 80370,
+      "heat": {
+        "spec_heat": 435,
+        "melting_point": 11618,
+        "boiling_point": 13840,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 665000,
+          "COMPRESSIVE": 190000,
+          "TENSILE": 190000,
+          "TORSION": 109697,
+          "SHEAR": 109697,
+          "BENDING": 190000
+        },
+        "fracture": {
+          "IMPACT": 1327200,
+          "COMPRESSIVE": 379200,
+          "TENSILE": 379200,
+          "TORSION": 218931,
+          "SHEAR": 218931,
+          "BENDING": 379200
+        },
+        "strain_at_yield": {
+          "IMPACT": 568,
+          "COMPRESSIVE": 162,
+          "TENSILE": 181,
+          "TORSION": 281,
+          "SHEAR": 281,
+          "BENDING": 181
+        },
+        "max_edge": 10180
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": false,
+        "ITEMS_WEAPON_RANGED": false,
+        "ITEMS_AMMO": false,
+        "ITEMS_DIGGER": false,
+        "ITEMS_ARMOR": false,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        1
+      ],
+      "build_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "RED_BRASS",
+      "name": "red brass",
+      "material_class": "METAL",
+      "color": "GUNMETAL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 6,
+      "solid_density": 8800,
+      "liquid_density": 8320,
+      "molar_mass": 71000,
+      "heat": {
+        "spec_heat": 377,
+        "melting_point": 11800,
+        "boiling_point": 14140,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 521500,
+          "COMPRESSIVE": 149000,
+          "TENSILE": 149000,
+          "TORSION": 86025,
+          "SHEAR": 86025,
+          "BENDING": 149000
+        },
+        "fracture": {
+          "IMPACT": 1074500,
+          "COMPRESSIVE": 307000,
+          "TENSILE": 307000,
+          "TORSION": 177247,
+          "SHEAR": 177247,
+          "BENDING": 307000
+        },
+        "strain_at_yield": {
+          "IMPACT": 470,
+          "COMPRESSIVE": 134,
+          "TENSILE": 139,
+          "TORSION": 215,
+          "SHEAR": 215,
+          "BENDING": 139
+        },
+        "max_edge": 10150
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        1
+      ],
+      "build_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "CUPRONICKEL",
+      "name": "melchior",
+      "material_class": "METAL",
+      "color": "CUPRONICKEL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 10,
+      "solid_density": 8940,
+      "liquid_density": 8030,
+      "molar_mass": 62000,
+      "heat": {
+        "spec_heat": 400,
+        "melting_point": 12168,
+        "boiling_point": 14611,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 603400,
+          "COMPRESSIVE": 206880,
+          "TENSILE": 172400,
+          "TORSION": 99535,
+          "SHEAR": 99535,
+          "BENDING": 172400
+        },
+        "fracture": {
+          "IMPACT": 1327200,
+          "COMPRESSIVE": 455040,
+          "TENSILE": 379200,
+          "TORSION": 218931,
+          "SHEAR": 218931,
+          "BENDING": 379200
+        },
+        "strain_at_yield": {
+          "IMPACT": 387,
+          "COMPRESSIVE": 133,
+          "TENSILE": 115,
+          "TORSION": 178,
+          "SHEAR": 178,
+          "BENDING": 115
+        },
+        "max_edge": 10100
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "MONEL",
+      "name": "monel",
+      "material_class": "METAL",
+      "color": "MONEL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 10,
+      "solid_density": 8800,
+      "liquid_density": 8030,
+      "molar_mass": 60149,
+      "heat": {
+        "spec_heat": 400,
+        "melting_point": 12340,
+        "boiling_point": 14911,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 755300,
+          "COMPRESSIVE": 193100,
+          "TENSILE": 215800,
+          "TORSION": 140270,
+          "SHEAR": 140270,
+          "BENDING": 215800
+        },
+        "fracture": {
+          "IMPACT": 1898050,
+          "COMPRESSIVE": 485300,
+          "TENSILE": 542300,
+          "TORSION": 352495,
+          "SHEAR": 352495,
+          "BENDING": 542300
+        },
+        "strain_at_yield": {
+          "IMPACT": 378,
+          "COMPRESSIVE": 97,
+          "TENSILE": 108,
+          "TORSION": 140,
+          "SHEAR": 140,
+          "BENDING": 108
+        },
+        "max_edge": 10280
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "NICKEL_OR_NOBLE"
+      ],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "ARSENIC_BRONZE",
+      "name": "arsenical bronze",
+      "material_class": "METAL",
+      "color": "ARSENIC_BRONZE",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 6,
+      "solid_density": 8642,
+      "liquid_density": 7620,
+      "molar_mass": 71000,
+      "heat": {
+        "spec_heat": 377,
+        "melting_point": 11788,
+        "boiling_point": 13940,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 135000,
+          "COMPRESSIVE": 135000,
+          "TENSILE": 112500,
+          "TORSION": 64952,
+          "SHEAR": 64952,
+          "BENDING": 112500
+        },
+        "fracture": {
+          "IMPACT": 331680,
+          "COMPRESSIVE": 331680,
+          "TENSILE": 276400,
+          "TORSION": 159580,
+          "SHEAR": 159580,
+          "BENDING": 276400
+        },
+        "strain_at_yield": {
+          "IMPACT": 115,
+          "COMPRESSIVE": 115,
+          "TENSILE": 107,
+          "TORSION": 167,
+          "SHEAR": 167,
+          "BENDING": 107
+        },
+        "max_edge": 10300
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "ANTIMONY_BRONZE",
+      "name": "antimonial bronze",
+      "material_class": "METAL",
+      "color": "ANTIMONY_BRONZE",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 6,
+      "solid_density": 8733,
+      "liquid_density": 7720,
+      "molar_mass": 71000,
+      "heat": {
+        "spec_heat": 377,
+        "melting_point": 11788,
+        "boiling_point": 13940,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 161280,
+          "COMPRESSIVE": 161280,
+          "TENSILE": 134400,
+          "TORSION": 77596,
+          "SHEAR": 77596,
+          "BENDING": 134400
+        },
+        "fracture": {
+          "IMPACT": 297000,
+          "COMPRESSIVE": 297000,
+          "TENSILE": 247500,
+          "TORSION": 142894,
+          "SHEAR": 142894,
+          "BENDING": 247500
+        },
+        "strain_at_yield": {
+          "IMPACT": 138,
+          "COMPRESSIVE": 138,
+          "TENSILE": 128,
+          "TORSION": 199,
+          "SHEAR": 199,
+          "BENDING": 128
+        },
+        "max_edge": 10400
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "ALUMINUM_BRONZE",
+      "name": "akal bronze",
+      "material_class": "METAL",
+      "color": "GOLDENROD",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 10,
+      "solid_density": 7450,
+      "liquid_density": 7150,
+      "molar_mass": 61157,
+      "heat": {
+        "spec_heat": 419,
+        "melting_point": 11868,
+        "boiling_point": 14068,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 773500,
+          "COMPRESSIVE": 354500,
+          "TENSILE": 221000,
+          "TORSION": 127594,
+          "SHEAR": 127594,
+          "BENDING": 221000
+        },
+        "fracture": {
+          "IMPACT": 2051000,
+          "COMPRESSIVE": 940000,
+          "TENSILE": 586000,
+          "TORSION": 338327,
+          "SHEAR": 338327,
+          "BENDING": 586000
+        },
+        "strain_at_yield": {
+          "IMPACT": 797,
+          "COMPRESSIVE": 365,
+          "TENSILE": 207,
+          "TORSION": 311,
+          "SHEAR": 311,
+          "BENDING": 207
+        },
+        "max_edge": 10340
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        1
+      ],
+      "build_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "ALUMINUM_NICKEL_BRONZE",
+      "name": "akalthas bronze",
+      "material_class": "METAL",
+      "color": "GOLD",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 12,
+      "solid_density": 7530,
+      "liquid_density": 7230,
+      "molar_mass": 58896,
+      "heat": {
+        "spec_heat": 419,
+        "melting_point": 11897,
+        "boiling_point": 14140,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1494500,
+          "COMPRESSIVE": 512400,
+          "TENSILE": 427000,
+          "TORSION": 246529,
+          "SHEAR": 246529,
+          "BENDING": 427000
+        },
+        "fracture": {
+          "IMPACT": 2653000,
+          "COMPRESSIVE": 909600,
+          "TENSILE": 758000,
+          "TORSION": 437632,
+          "SHEAR": 437632,
+          "BENDING": 758000
+        },
+        "strain_at_yield": {
+          "IMPACT": 1465,
+          "COMPRESSIVE": 502,
+          "TENSILE": 388,
+          "TORSION": 587,
+          "SHEAR": 587,
+          "BENDING": 388
+        },
+        "max_edge": 10416
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        1
+      ],
+      "build_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "NICKEL_TIN_BRONZE",
+      "name": "akrulthas bronze",
+      "material_class": "METAL",
+      "color": "AKRULTHAS_BRONZE",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 12,
+      "solid_density": 8940,
+      "liquid_density": 8000,
+      "molar_mass": 68577,
+      "heat": {
+        "spec_heat": 377,
+        "melting_point": 12007,
+        "boiling_point": 14500,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 2533650,
+          "COMPRESSIVE": 868700,
+          "TENSILE": 723900,
+          "TORSION": 417944,
+          "SHEAR": 417944,
+          "BENDING": 723900
+        },
+        "fracture": {
+          "IMPACT": 2775150,
+          "COMPRESSIVE": 951500,
+          "TENSILE": 792900,
+          "TORSION": 457781,
+          "SHEAR": 457781,
+          "BENDING": 792900
+        },
+        "strain_at_yield": {
+          "IMPACT": 3128,
+          "COMPRESSIVE": 1072,
+          "TENSILE": 570,
+          "TORSION": 819,
+          "SHEAR": 819,
+          "BENDING": 570
+        },
+        "max_edge": 10560
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        1
+      ],
+      "build_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "INVAR",
+      "name": "invarkel",
+      "material_class": "METAL",
+      "color": "BRIGHTSTEEL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 10,
+      "solid_density": 8250,
+      "liquid_density": 7980,
+      "molar_mass": null,
+      "heat": {
+        "spec_heat": 450,
+        "melting_point": 12538,
+        "boiling_point": 15050,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 868000,
+          "COMPRESSIVE": 297600,
+          "TENSILE": 248000,
+          "TORSION": 143183,
+          "SHEAR": 143183,
+          "BENDING": 248000
+        },
+        "fracture": {
+          "IMPACT": 1711500,
+          "COMPRESSIVE": 586800,
+          "TENSILE": 489000,
+          "TORSION": 282324,
+          "SHEAR": 282324,
+          "BENDING": 489000
+        },
+        "strain_at_yield": {
+          "IMPACT": 700,
+          "COMPRESSIVE": 240,
+          "TENSILE": 176,
+          "TORSION": 265,
+          "SHEAR": 265,
+          "BENDING": 176
+        },
+        "max_edge": 10340
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "DAMASCUS_STEEL",
+      "name": "damasklilar steel",
+      "material_class": "METAL",
+      "color": "DAMASCUS",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 30,
+      "solid_density": 7850,
+      "liquid_density": 6980,
+      "molar_mass": 55845,
+      "heat": {
+        "spec_heat": 500,
+        "melting_point": 12718,
+        "boiling_point": 14968,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 2590000,
+          "COMPRESSIVE": 888000,
+          "TENSILE": 740000,
+          "TORSION": 427239,
+          "SHEAR": 427239,
+          "BENDING": 740000
+        },
+        "fracture": {
+          "IMPACT": 3745000,
+          "COMPRESSIVE": 1284000,
+          "TENSILE": 1070000,
+          "TORSION": 617765,
+          "SHEAR": 617765,
+          "BENDING": 1070000
+        },
+        "strain_at_yield": {
+          "IMPACT": 1551,
+          "COMPRESSIVE": 532,
+          "TENSILE": 370,
+          "TORSION": 555,
+          "SHEAR": 555,
+          "BENDING": 370
+        },
+        "max_edge": 10384
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "STARSTEEL",
+      "name": "virkel steel",
+      "material_class": "METAL",
+      "color": "BLUE-GRAY",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 40,
+      "solid_density": 8100,
+      "liquid_density": 7500,
+      "molar_mass": 56723,
+      "heat": {
+        "spec_heat": 452,
+        "melting_point": 12543,
+        "boiling_point": 14500,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 4971050,
+          "COMPRESSIVE": 1468600,
+          "TENSILE": 1420300,
+          "TORSION": 820011,
+          "SHEAR": 820011,
+          "BENDING": 1420300
+        },
+        "fracture": {
+          "IMPACT": 5067650,
+          "COMPRESSIVE": 1737500,
+          "TENSILE": 1447900,
+          "TORSION": 835945,
+          "SHEAR": 835945,
+          "BENDING": 1447900
+        },
+        "strain_at_yield": {
+          "IMPACT": 3314,
+          "COMPRESSIVE": 979,
+          "TENSILE": 789,
+          "TORSION": 1188,
+          "SHEAR": 1188,
+          "BENDING": 789
+        },
+        "max_edge": 10740
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": true
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "BRIGHTSTEEL",
+      "name": "brynonul steel",
+      "material_class": "METAL",
+      "color": "BRIGHTSTEEL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 40,
+      "solid_density": 7780,
+      "liquid_density": 7380,
+      "molar_mass": 55361,
+      "heat": {
+        "spec_heat": 452,
+        "melting_point": 12543,
+        "boiling_point": 14768,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 4095000,
+          "COMPRESSIVE": 1227000,
+          "TENSILE": 1170000,
+          "TORSION": 676000,
+          "SHEAR": 675500,
+          "BENDING": 1170000
+        },
+        "fracture": {
+          "IMPACT": 4585000,
+          "COMPRESSIVE": 1374000,
+          "TENSILE": 1310000,
+          "TORSION": 1179000,
+          "SHEAR": 756329,
+          "BENDING": 1310000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2642,
+          "COMPRESSIVE": 792,
+          "TENSILE": 585,
+          "TORSION": 867,
+          "SHEAR": 866,
+          "BENDING": 585
+        },
+        "max_edge": 10704
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": true
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "HARDSTEEL",
+      "name": "tholduraz steel",
+      "material_class": "METAL",
+      "color": "HARDSTEEL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 60,
+      "solid_density": 8255,
+      "liquid_density": 8000,
+      "molar_mass": 124129,
+      "heat": {
+        "spec_heat": 452,
+        "melting_point": 12588,
+        "boiling_point": 14800,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 5886300,
+          "COMPRESSIVE": 2522700,
+          "TENSILE": 1681800,
+          "TORSION": 970988,
+          "SHEAR": 970988,
+          "BENDING": 1681800
+        },
+        "fracture": {
+          "IMPACT": 7000000,
+          "COMPRESSIVE": 3000000,
+          "TENSILE": 2000000,
+          "TORSION": 1154701,
+          "SHEAR": 1154701,
+          "BENDING": 2000000
+        },
+        "strain_at_yield": {
+          "IMPACT": 3383,
+          "COMPRESSIVE": 1450,
+          "TENSILE": 786,
+          "TORSION": 1170,
+          "SHEAR": 1170,
+          "BENDING": 786
+        },
+        "max_edge": 11500
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": true
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "MANGALLOY_STEEL",
+      "name": "mangaz steel",
+      "material_class": "METAL",
+      "color": "ASH_GRAY",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 40,
+      "solid_density": 8200,
+      "liquid_density": 7933,
+      "molar_mass": 55845,
+      "heat": {
+        "spec_heat": 500,
+        "melting_point": 12430,
+        "boiling_point": 14859,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 2895900,
+          "COMPRESSIVE": 1468600,
+          "TENSILE": 827400,
+          "TORSION": 477700,
+          "SHEAR": 477700,
+          "BENDING": 827400
+        },
+        "fracture": {
+          "IMPACT": 3740450,
+          "COMPRESSIVE": 1282400,
+          "TENSILE": 1068700,
+          "TORSION": 617014,
+          "SHEAR": 617014,
+          "BENDING": 1068700
+        },
+        "strain_at_yield": {
+          "COMPRESSIVE": 947,
+          "TENSILE": 445,
+          "TORSION": 663,
+          "SHEAR": 663,
+          "BENDING": 445
+        },
+        "max_edge": 11200
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": true
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        7,
+        7,
+        0
+      ],
+      "build_color": [
+        7,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "ALACRIL",
+      "name": "alacril",
+      "material_class": "METAL",
+      "color": "ALACRIL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 40,
+      "solid_density": 9270,
+      "liquid_density": 9070,
+      "molar_mass": 76257,
+      "heat": {
+        "spec_heat": 377,
+        "melting_point": 12538,
+        "boiling_point": 14750,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 3500000,
+          "COMPRESSIVE": 1200000,
+          "TENSILE": 1000000,
+          "TORSION": 577350,
+          "SHEAR": 577350,
+          "BENDING": 1000000
+        },
+        "fracture": {
+          "IMPACT": 4707500,
+          "COMPRESSIVE": 1614000,
+          "TENSILE": 1345000,
+          "TORSION": 776536,
+          "SHEAR": 776536,
+          "BENDING": 1345000
+        },
+        "strain_at_yield": {
+          "IMPACT": 1724,
+          "COMPRESSIVE": 591,
+          "TENSILE": 412,
+          "TORSION": 621,
+          "SHEAR": 621,
+          "BENDING": 412
+        },
+        "max_edge": 10750
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": true
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "ELGILRIL",
+      "name": "elgilril",
+      "material_class": "METAL",
+      "color": "ELGILRIL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 40,
+      "solid_density": 8300,
+      "liquid_density": 8000,
+      "molar_mass": 56880,
+      "heat": {
+        "spec_heat": 430,
+        "melting_point": 12501,
+        "boiling_point": 14700,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 3395000,
+          "COMPRESSIVE": 1164000,
+          "TENSILE": 970000,
+          "TORSION": 560030,
+          "SHEAR": 560030,
+          "BENDING": 970000
+        },
+        "fracture": {
+          "IMPACT": 4200000,
+          "COMPRESSIVE": 1440000,
+          "TENSILE": 1200000,
+          "TORSION": 692820,
+          "SHEAR": 692820,
+          "BENDING": 1200000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2952,
+          "COMPRESSIVE": 1012,
+          "TENSILE": 512,
+          "TORSION": 727,
+          "SHEAR": 727,
+          "BENDING": 512
+        },
+        "max_edge": 10900
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": true
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "CONIMOCRIL",
+      "name": "conimocril",
+      "material_class": "METAL",
+      "color": "CONIMOCRIL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 55,
+      "solid_density": 8410,
+      "liquid_density": 6000,
+      "molar_mass": 10000,
+      "heat": {
+        "spec_heat": 440,
+        "melting_point": 12592,
+        "boiling_point": 15269,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 3136000,
+          "COMPRESSIVE": 1075200,
+          "TENSILE": 896000,
+          "TORSION": 517306,
+          "SHEAR": 517306,
+          "BENDING": 896000
+        },
+        "fracture": {
+          "IMPACT": 4585000,
+          "COMPRESSIVE": 1572000,
+          "TENSILE": 1310000,
+          "TORSION": 756329,
+          "SHEAR": 756329,
+          "BENDING": 1310000
+        },
+        "strain_at_yield": {
+          "IMPACT": 1659,
+          "COMPRESSIVE": 569,
+          "TENSILE": 385,
+          "TORSION": 575,
+          "SHEAR": 575,
+          "BENDING": 385
+        },
+        "max_edge": 10980
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": false,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "EMENRIL",
+      "name": "emenril",
+      "material_class": "METAL",
+      "color": "EMENRIL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 60,
+      "solid_density": 4820,
+      "liquid_density": 4430,
+      "molar_mass": 55361,
+      "heat": {
+        "spec_heat": 553,
+        "melting_point": 13006,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 3990000,
+          "COMPRESSIVE": 1140000,
+          "TENSILE": 1140000,
+          "TORSION": 658179,
+          "SHEAR": 658179,
+          "BENDING": 1140000
+        },
+        "fracture": {
+          "IMPACT": 4235000,
+          "COMPRESSIVE": 1210000,
+          "TENSILE": 1210000,
+          "TORSION": 698594,
+          "SHEAR": 698594,
+          "BENDING": 1210000
+        },
+        "strain_at_yield": {
+          "IMPACT": 4640,
+          "COMPRESSIVE": 1326,
+          "TENSILE": 1124,
+          "TORSION": 1688,
+          "SHEAR": 1688,
+          "BENDING": 1124
+        },
+        "max_edge": 10800
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "NICKEL_OR_NOBLE"
+      ],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": true
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "RELARKEL",
+      "name": "relarkel",
+      "material_class": "METAL",
+      "color": "RELARKEL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 60,
+      "solid_density": 21700,
+      "liquid_density": 19000,
+      "molar_mass": 192217,
+      "heat": {
+        "spec_heat": 138,
+        "melting_point": 13366,
+        "boiling_point": 17149,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 4585000,
+          "COMPRESSIVE": 1572000,
+          "TENSILE": 1310000,
+          "TORSION": 756329,
+          "SHEAR": 756329,
+          "BENDING": 1310000
+        },
+        "fracture": {
+          "IMPACT": 4830000,
+          "COMPRESSIVE": 1656000,
+          "TENSILE": 1380000,
+          "TORSION": 796743,
+          "SHEAR": 796743,
+          "BENDING": 1380000
+        },
+        "strain_at_yield": {
+          "IMPACT": 1609,
+          "COMPRESSIVE": 552,
+          "TENSILE": 548,
+          "TORSION": 859,
+          "SHEAR": 859,
+          "BENDING": 548
+        },
+        "max_edge": 11130
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "NICKEL_OR_NOBLE"
+      ],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "ESRELKEL",
+      "name": "esrelkel",
+      "material_class": "METAL",
+      "color": "PALLADIUM",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 45,
+      "solid_density": 18600,
+      "liquid_density": 17000,
+      "molar_mass": 177640,
+      "heat": {
+        "spec_heat": 150,
+        "melting_point": 13132,
+        "boiling_point": 17100,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 840000,
+          "COMPRESSIVE": 840000,
+          "TENSILE": 700000,
+          "TORSION": 404145,
+          "SHEAR": 404145,
+          "BENDING": 700000
+        },
+        "fracture": {
+          "IMPACT": 1050000,
+          "COMPRESSIVE": 1050000,
+          "TENSILE": 875000,
+          "TORSION": 505181,
+          "SHEAR": 505181,
+          "BENDING": 875000
+        },
+        "strain_at_yield": {
+          "IMPACT": 288,
+          "COMPRESSIVE": 288,
+          "TENSILE": 333,
+          "TORSION": 532,
+          "SHEAR": 532,
+          "BENDING": 333
+        },
+        "max_edge": 10760
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "NICKEL_OR_NOBLE"
+      ],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "DANMANKEL",
+      "name": "danmankel",
+      "material_class": "METAL",
+      "color": "DANMANKEL",
+      "fallback_colors": [],
+      "liquid_color": "RED",
+      "gas_color": "RED",
+      "value": 50,
+      "solid_density": 19000,
+      "liquid_density": 19000,
+      "molar_mass": 218028,
+      "heat": {
+        "spec_heat": 138,
+        "melting_point": 13366,
+        "boiling_point": 17149,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 2784600,
+          "COMPRESSIVE": 795600,
+          "TENSILE": 795600,
+          "TORSION": 596700,
+          "SHEAR": 596700,
+          "BENDING": 795600
+        },
+        "fracture": {
+          "IMPACT": 5477885,
+          "COMPRESSIVE": 1565110,
+          "TENSILE": 1565110,
+          "TORSION": 1173833,
+          "SHEAR": 1173833,
+          "BENDING": 1565110
+        },
+        "strain_at_yield": {
+          "IMPACT": 2078,
+          "COMPRESSIVE": 594,
+          "TENSILE": 549,
+          "TORSION": 1085,
+          "SHEAR": 1085,
+          "BENDING": 549
+        },
+        "max_edge": 11130
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "ITEMS_METAL": true,
+        "ITEMS_HARD": true,
+        "ITEMS_BARRED": true,
+        "ITEMS_SCALED": true,
+        "ITEMS_WEAPON": true,
+        "ITEMS_WEAPON_RANGED": true,
+        "ITEMS_AMMO": true,
+        "ITEMS_DIGGER": true,
+        "ITEMS_ARMOR": true,
+        "ITEMS_ANVIL": false
+      },
+      "inorganic_flags": {
+        "SPECIAL": true
+      },
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "CALCIUM_PHOSPHATE",
+      "name": "bone ash",
+      "names": {
+        "solid": "bone ash",
+        "liquid": "bone ash",
+        "gas": "bone ash",
+        "powder": "bone ash",
+        "paste": "bone ash",
+        "pressed": "bone ash"
+      },
+      "material_class": "RAW",
+      "color": "IVORY",
+      "fallback_colors": [],
+      "liquid_color": "IVORY",
+      "gas_color": "IVORY",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "CALCIUM_CARBONATE",
+      "name": "lime",
+      "names": {
+        "solid": "lime",
+        "liquid": "lime",
+        "gas": "lime",
+        "powder": "lime",
+        "paste": "lime",
+        "pressed": "lime"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 2,
+      "tile": 34,
+      "solid_density": 2711,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "FLUX_PROCESSED"
+      ],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "CALCIUM_CHLORIDE",
+      "name": "salt of calcia",
+      "names": {
+        "solid": "salt of calcia",
+        "liquid": "salt of calcia",
+        "gas": "salt of calcia",
+        "powder": "salt of calcia",
+        "paste": "salt of calcia",
+        "pressed": "salt of calcia"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "SULFATE_RESIDUE",
+          "mat_id": "PLASTER"
+        }
+      ],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "CALCIUM_FLUORIDE",
+      "name": "fluor lapis",
+      "names": {
+        "solid": "fluor lapis",
+        "liquid": "fluor lapis",
+        "gas": "fluor lapis",
+        "powder": "fluor lapis",
+        "paste": "fluor lapis",
+        "pressed": "fluor lapis"
+      },
+      "material_class": "RAW",
+      "color": "AMETHYST",
+      "fallback_colors": [],
+      "liquid_color": "AMETHYST",
+      "gas_color": "AMETHYST",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        5,
+        7,
+        1
+      ],
+      "build_color": [
+        5,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "SODIUM_CARBONATE",
+      "name": "soda ash",
+      "names": {
+        "solid": "soda ash",
+        "liquid": "soda ash",
+        "gas": "soda ash",
+        "powder": "soda ash",
+        "paste": "soda ash",
+        "pressed": "soda ash"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "SODIUM_SULFATE",
+      "name": "sulfate of soda",
+      "names": {
+        "solid": "sulfate of soda",
+        "liquid": "sulfate of soda",
+        "gas": "sulfate of soda",
+        "powder": "sulfate of soda",
+        "paste": "sulfate of soda",
+        "pressed": "sulfate of soda"
+      },
+      "material_class": "RAW",
+      "color": "IVORY",
+      "fallback_colors": [],
+      "liquid_color": "IVORY",
+      "gas_color": "IVORY",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "SODIUM_BISULFATE",
+      "name": "bisulfate of soda",
+      "names": {
+        "solid": "bisulfate of soda",
+        "liquid": "bisulfate of soda",
+        "gas": "bisulfate of soda",
+        "powder": "bisulfate of soda",
+        "paste": "bisulfate of soda",
+        "pressed": "bisulfate of soda"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "SODIUM_CHLORIDE",
+      "name": "salt",
+      "names": {
+        "solid": "salt",
+        "liquid": "salt",
+        "gas": "salt",
+        "powder": "salt",
+        "paste": "salt",
+        "pressed": "salt"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "SALT_GLAZE",
+        "SINGLE_SALT",
+        "NONFERROUS_COVER_FLUX"
+      ],
+      "reaction_products": [
+        {
+          "id": "SULFATE_RESIDUE",
+          "mat_id": "ARGMOD_SODIUM_SULFATE"
+        },
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_SALT_GLAZE"
+        }
+      ],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "AMMONIUM_CHLORIDE",
+      "name": "salt of ammon",
+      "names": {
+        "solid": "salt of ammon",
+        "liquid": "salt of ammon",
+        "gas": "salt of ammon",
+        "powder": "salt of ammon",
+        "paste": "salt of ammon",
+        "pressed": "salt of ammon"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "AMMONIUM_CARBONATE",
+      "name": "hartshorn",
+      "names": {
+        "solid": "hartshorn",
+        "liquid": "hartshorn",
+        "gas": "hartshorn",
+        "powder": "hartshorn",
+        "paste": "hartshorn",
+        "pressed": "hartshorn"
+      },
+      "material_class": "RAW",
+      "color": "BEIGE",
+      "fallback_colors": [],
+      "liquid_color": "BEIGE",
+      "gas_color": "BEIGE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "AMMONIUM_SULFATE",
+      "name": "ammoniacal vitriol",
+      "names": {
+        "solid": "ammoniacal vitriol",
+        "liquid": "ammoniacal vitriol",
+        "gas": "ammoniacal vitriol",
+        "powder": "ammoniacal vitriol",
+        "paste": "ammoniacal vitriol",
+        "pressed": "ammoniacal vitriol"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "POTASSIUM_ALUMINUM_SULFATE",
+      "name": "alum",
+      "names": {
+        "solid": "alum",
+        "liquid": "alum",
+        "gas": "alum",
+        "powder": "alum",
+        "paste": "alum",
+        "pressed": "alum"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 4,
+      "tile": 34,
+      "solid_density": 1725,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 10166,
+        "boiling_point": 10360,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "POTASSIUM_SULFATE",
+      "name": "sulfate of potash",
+      "names": {
+        "solid": "sulfate of potash",
+        "liquid": "sulfate of potash",
+        "gas": "sulfate of potash",
+        "powder": "sulfate of potash",
+        "paste": "sulfate of potash",
+        "pressed": "sulfate of potash"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "POTASSIUM_BISULFATE",
+      "name": "bisulfate of potash",
+      "names": {
+        "solid": "bisulfate of potash",
+        "liquid": "bisulfate of potash",
+        "gas": "bisulfate of potash",
+        "powder": "bisulfate of potash",
+        "paste": "bisulfate of potash",
+        "pressed": "bisulfate of potash"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "POTASSIUM_CHLORIDE",
+      "name": "salt of potash",
+      "names": {
+        "solid": "salt of potash",
+        "liquid": "salt of potash",
+        "gas": "salt of potash",
+        "powder": "salt of potash",
+        "paste": "salt of potash",
+        "pressed": "salt of potash"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "SALT_GLAZE",
+        "SINGLE_SALT",
+        "NONFERROUS_COVER_FLUX"
+      ],
+      "reaction_products": [
+        {
+          "id": "SULFATE_RESIDUE",
+          "mat_id": "ARGMOD_POTASSIUM_SULFATE"
+        },
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_SALT_GLAZE"
+        }
+      ],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "MAGNESIUM_OXIDE",
+      "name": "magnesia",
+      "names": {
+        "solid": "magnesia",
+        "liquid": "magnesia",
+        "gas": "magnesia",
+        "powder": "magnesia",
+        "paste": "magnesia",
+        "pressed": "magnesia"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 3580,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 15134,
+        "boiling_point": 16480,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "MAGNESIUM_CARBONATE",
+      "name": "magnesia alba",
+      "names": {
+        "solid": "magnesia alba",
+        "liquid": "magnesia alba",
+        "gas": "magnesia alba",
+        "powder": "magnesia alba",
+        "paste": "magnesia alba",
+        "pressed": "magnesia alba"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 3580,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 15134,
+        "boiling_point": 16480,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "MAGNESIUM_CHLORIDE",
+      "name": "salt of magnesia",
+      "names": {
+        "solid": "salt of magnesia",
+        "liquid": "salt of magnesia",
+        "gas": "salt of magnesia",
+        "powder": "salt of magnesia",
+        "paste": "salt of magnesia",
+        "pressed": "salt of magnesia"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 3,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "SULFATE_RESIDUE",
+          "mat_id": "ARGMOD_MAGNESIUM_SULFATE"
+        }
+      ],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "MAGNESIUM_SULFATE",
+      "name": "sulfate of magnesia",
+      "names": {
+        "solid": "sulfate of magnesia",
+        "liquid": "sulfate of magnesia",
+        "gas": "sulfate of magnesia",
+        "powder": "sulfate of magnesia",
+        "paste": "sulfate of magnesia",
+        "pressed": "sulfate of magnesia"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 4,
+      "tile": 34,
+      "solid_density": 2500,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11500,
+        "boiling_point": 14000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "AMMONIA_SOLUTION",
+      "name": "ammoniacal liquor",
+      "names": {
+        "solid": "ammoniacal liquor",
+        "liquid": "ammoniacal liquor",
+        "gas": "boiling ammoniacal liquor",
+        "powder": "ammoniacal liquor",
+        "paste": "ammoniacal liquor",
+        "pressed": "ammoniacal liquor"
+      },
+      "material_class": "RAW",
+      "color": "CLEAR",
+      "fallback_colors": [],
+      "liquid_color": "CLEAR",
+      "gas_color": "CLEAR",
+      "value": 5,
+      "tile": null,
+      "solid_density": 1200,
+      "liquid_density": 1200,
+      "molar_mass": 20000,
+      "heat": {
+        "spec_heat": 4181,
+        "melting_point": 9950,
+        "boiling_point": 10200,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "fracture": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 500
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "LIQUID_MISC": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "SULFURIC_ACID",
+      "name": "frozen oil of vitriol",
+      "names": {
+        "solid": "frozen oil of vitriol",
+        "liquid": "oil of vitriol",
+        "gas": "vitriolic fumes",
+        "powder": "frozen oil of vitriol",
+        "paste": "frozen oil of vitriol",
+        "pressed": "frozen oil of vitriol"
+      },
+      "material_class": "RAW",
+      "color": "CLEAR",
+      "fallback_colors": [],
+      "liquid_color": "CLEAR",
+      "gas_color": "CLEAR",
+      "value": 5,
+      "tile": null,
+      "solid_density": 1830,
+      "liquid_density": 1830,
+      "molar_mass": 20000,
+      "heat": {
+        "spec_heat": 1416,
+        "melting_point": 10000,
+        "boiling_point": 10608,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "fracture": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 500
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "LIQUID_MISC": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "NITRIC_ACID",
+      "name": "frozen spirit of niter",
+      "names": {
+        "solid": "frozen spirit of niter",
+        "liquid": "spirit of niter",
+        "gas": "fuming spirit of niter",
+        "powder": "frozen spirit of niter",
+        "paste": "frozen spirit of niter",
+        "pressed": "frozen spirit of niter"
+      },
+      "material_class": "RAW",
+      "color": "CLEAR",
+      "fallback_colors": [],
+      "liquid_color": "CLEAR",
+      "gas_color": "CLEAR",
+      "value": 5,
+      "tile": null,
+      "solid_density": 1411,
+      "liquid_density": 1411,
+      "molar_mass": 20000,
+      "heat": {
+        "spec_heat": 1416,
+        "melting_point": 9946,
+        "boiling_point": 10218,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "fracture": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 500
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "LIQUID_MISC": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "HYDROCHLORIC_ACID",
+      "name": "frozen spirit of muria",
+      "names": {
+        "solid": "frozen spirit of muria",
+        "liquid": "spirit of muria",
+        "gas": "fuming spirit of muria",
+        "powder": "frozen spirit of muria",
+        "paste": "frozen spirit of muria",
+        "pressed": "frozen spirit of muria"
+      },
+      "material_class": "RAW",
+      "color": "CLEAR",
+      "fallback_colors": [],
+      "liquid_color": "CLEAR",
+      "gas_color": "CLEAR",
+      "value": 5,
+      "tile": null,
+      "solid_density": 1189,
+      "liquid_density": 1189,
+      "molar_mass": 20000,
+      "heat": {
+        "spec_heat": 1416,
+        "melting_point": 9950,
+        "boiling_point": 10130,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "fracture": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 500
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "HALOGEN_ACID"
+      ],
+      "reaction_products": [],
+      "material_flags": {
+        "LIQUID_MISC": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "HYDROFLUORIC_ACID",
+      "name": "frozen spirit of fluor",
+      "names": {
+        "solid": "frozen spirit of fluor",
+        "liquid": "spirit of fluor",
+        "gas": "fuming spirit of fluor",
+        "powder": "frozen spirit of fluor",
+        "paste": "frozen spirit of fluor",
+        "pressed": "frozen spirit of fluor"
+      },
+      "material_class": "RAW",
+      "color": "CLEAR",
+      "fallback_colors": [],
+      "liquid_color": "CLEAR",
+      "gas_color": "CLEAR",
+      "value": 5,
+      "tile": null,
+      "solid_density": 1230,
+      "liquid_density": 1230,
+      "molar_mass": 20000,
+      "heat": {
+        "spec_heat": 1230,
+        "melting_point": 9875,
+        "boiling_point": 10120,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "fracture": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 500
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "HALOGEN_ACID"
+      ],
+      "reaction_products": [],
+      "material_flags": {
+        "LIQUID_MISC": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "AQUA_REGIA",
+      "name": "frozen aqua regia",
+      "names": {
+        "solid": "frozen aqua regia",
+        "liquid": "aqua regia",
+        "gas": "fuming aqua regia",
+        "powder": "frozen aqua regia",
+        "paste": "frozen aqua regia",
+        "pressed": "frozen aqua regia"
+      },
+      "material_class": "RAW",
+      "color": "CLEAR",
+      "fallback_colors": [],
+      "liquid_color": "CLEAR",
+      "gas_color": "CLEAR",
+      "value": 8,
+      "tile": null,
+      "solid_density": 1200,
+      "liquid_density": 1200,
+      "molar_mass": 20000,
+      "heat": {
+        "spec_heat": 1416,
+        "melting_point": 9926,
+        "boiling_point": 10194,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "fracture": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 500
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "LIQUID_MISC": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ],
+      "build_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "MANGANESE_CHLORIDE",
+      "name": "muriate of manganese",
+      "names": {
+        "solid": "muriate of manganese",
+        "liquid": "muriate of manganese",
+        "gas": "muriate of manganese",
+        "powder": "muriate of manganese",
+        "paste": "muriate of manganese",
+        "pressed": "muriate of manganese"
+      },
+      "material_class": "RAW",
+      "color": "PINK",
+      "fallback_colors": [],
+      "liquid_color": "PINK",
+      "gas_color": "PINK",
+      "value": 8,
+      "tile": null,
+      "solid_density": 2977,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11177,
+        "boiling_point": 12205,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "POWDER_SMELT",
+          "mat_id": "MANGANESE"
+        }
+      ],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        5,
+        7,
+        1
+      ],
+      "build_color": [
+        5,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "SODIUM_ALUMINUM_CHLORIDE",
+      "name": "muriate of soda-alum",
+      "names": {
+        "solid": "muriate of soda-alum",
+        "liquid": "muriate of soda-alum",
+        "gas": "muriate of soda-alum",
+        "powder": "muriate of soda-alum",
+        "paste": "muriate of soda-alum",
+        "pressed": "muriate of soda-alum"
+      },
+      "material_class": "RAW",
+      "color": "YELLOW",
+      "fallback_colors": [],
+      "liquid_color": "YELLOW",
+      "gas_color": "YELLOW",
+      "value": 10,
+      "tile": null,
+      "solid_density": 2010,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 10283,
+        "boiling_point": 10720,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        1
+      ],
+      "build_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "TITANIUM_CHLORIDE",
+      "name": "muriate of titan",
+      "names": {
+        "solid": "muriate of titan",
+        "liquid": "muriate of titan",
+        "gas": "muriate of titan",
+        "powder": "muriate of titan",
+        "paste": "muriate of titan",
+        "pressed": "muriate of titan"
+      },
+      "material_class": "RAW",
+      "color": "CREAM",
+      "fallback_colors": [],
+      "liquid_color": "CREAM",
+      "gas_color": "CREAM",
+      "value": 12,
+      "tile": null,
+      "solid_density": 2010,
+      "liquid_density": 1200,
+      "molar_mass": 20000,
+      "heat": {
+        "spec_heat": 4181,
+        "melting_point": 9955,
+        "boiling_point": 10250,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "fracture": {
+          "IMPACT": 10000,
+          "COMPRESSIVE": 10000,
+          "TENSILE": 10000,
+          "TORSION": 10000,
+          "SHEAR": 6600,
+          "BENDING": 10000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 500
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "LIQUID_MISC": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        1
+      ],
+      "build_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "BERYLLIUM_ALUMINUM_FLUORIDE",
+      "name": "flowers of beryl-alum",
+      "names": {
+        "solid": "flowers of beryl-alum",
+        "liquid": "flowers of beryl-alum",
+        "gas": "flowers of beryl-alum",
+        "powder": "flowers of beryl-alum",
+        "paste": "flowers of beryl-alum",
+        "pressed": "flowers of beryl-alum"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 12,
+      "tile": null,
+      "solid_density": 2450,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11440,
+        "boiling_point": 12160,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "POTASSIUM_NITRATE",
+      "name": "potash saltpeter",
+      "names": {
+        "solid": "potash saltpeter",
+        "liquid": "potash saltpeter",
+        "gas": "potash saltpeter",
+        "powder": "potash saltpeter",
+        "paste": "potash saltpeter",
+        "pressed": "potash saltpeter"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 5,
+      "tile": 34,
+      "solid_density": 2110,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 10601,
+        "boiling_point": 10720,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "ANHYDROUS_SALTPETER"
+      ],
+      "reaction_products": [
+        {
+          "id": "SULFATE_RESIDUE",
+          "mat_id": "ARGMOD_POTASSIUM_SULFATE"
+        },
+        {
+          "id": "BISULFATE_PRECIPITATE",
+          "mat_id": "ARGMOD_POTASSIUM_BISULFATE"
+        },
+        {
+          "id": "MURIATE_PRECIPITATE",
+          "mat_id": "ARGMOD_POTASSIUM_CHLORIDE"
+        }
+      ],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "SODIUM_NITRATE",
+      "name": "soda saltpeter",
+      "names": {
+        "solid": "soda saltpeter",
+        "liquid": "soda saltpeter",
+        "gas": "soda saltpeter",
+        "powder": "soda saltpeter",
+        "paste": "soda saltpeter",
+        "pressed": "soda saltpeter"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 5,
+      "tile": 34,
+      "solid_density": 2260,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 10554,
+        "boiling_point": 10684,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "ANHYDROUS_SALTPETER"
+      ],
+      "reaction_products": [
+        {
+          "id": "SULFATE_RESIDUE",
+          "mat_id": "ARGMOD_SODIUM_SULFATE"
+        },
+        {
+          "id": "BISULFATE_PRECIPITATE",
+          "mat_id": "ARGMOD_SODIUM_BISULFATE"
+        },
+        {
+          "id": "MURIATE_PRECIPITATE",
+          "mat_id": "ARGMOD_SODIUM_CHLORIDE"
+        }
+      ],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "CALCIUM_NITRATE",
+      "name": "calcic saltpeter",
+      "names": {
+        "solid": "calcic saltpeter",
+        "liquid": "calcic saltpeter",
+        "gas": "calcic saltpeter",
+        "powder": "calcic saltpeter",
+        "paste": "calcic saltpeter",
+        "pressed": "calcic saltpeter"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 4,
+      "tile": 34,
+      "solid_density": 1820,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 10238,
+        "boiling_point": 10979,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "MURIATE_PRECIPITATE",
+          "mat_id": "ARGMOD_CALCIUM_CHLORIDE"
+        },
+        {
+          "id": "SULFATE_RESIDUE",
+          "mat_id": "PLASTER"
+        }
+      ],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "MAGNESIUM_NITRATE",
+      "name": "magnesiac saltpeter",
+      "names": {
+        "solid": "magnesiac saltpeter",
+        "liquid": "magnesiac saltpeter",
+        "gas": "magnesiac saltpeter",
+        "powder": "magnesiac saltpeter",
+        "paste": "magnesiac saltpeter",
+        "pressed": "magnesiac saltpeter"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 4,
+      "tile": 34,
+      "solid_density": 1460,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 10160,
+        "boiling_point": 10594,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "MURIATE_PRECIPITATE",
+          "mat_id": "ARGMOD_MAGNESIUM_CHLORIDE"
+        },
+        {
+          "id": "SULFATE_RESIDUE",
+          "mat_id": "ARGMOD_MAGNESIUM_SULFATE"
+        }
+      ],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "LEAD_OXIDE",
+      "name": "plumbic ash",
+      "names": {
+        "solid": "plumbic ash",
+        "liquid": "plumbic ash",
+        "gas": "plumbic ash",
+        "powder": "plumbic ash",
+        "paste": "plumbic ash",
+        "pressed": "plumbic ash"
+      },
+      "material_class": "RAW",
+      "color": "TAUPE_DARK",
+      "fallback_colors": [],
+      "liquid_color": "TAUPE_DARK",
+      "gas_color": "TAUPE_DARK",
+      "value": 4,
+      "tile": null,
+      "solid_density": 9380,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 11598,
+        "boiling_point": 12659,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "METAL_OXIDE",
+        "LEAD_OXIDE"
+      ],
+      "reaction_products": [
+        {
+          "id": "POWDER_SMELT",
+          "mat_id": "LEAD"
+        }
+      ],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        0
+      ],
+      "build_color": [
+        6,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "CHROMIUM_OXIDE",
+      "name": "chromia",
+      "names": {
+        "solid": "chromia",
+        "liquid": "chromia",
+        "gas": "chromia",
+        "powder": "chromia",
+        "paste": "chromia",
+        "pressed": "chromia"
+      },
+      "material_class": "RAW",
+      "color": "GRASS_GREEN",
+      "fallback_colors": [],
+      "liquid_color": "GRASS_GREEN",
+      "gas_color": "GRASS_GREEN",
+      "value": 8,
+      "tile": null,
+      "solid_density": 5220,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 14383,
+        "boiling_point": 17200,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "METAL_OXIDE",
+        "CHROMIUM_OXIDE"
+      ],
+      "reaction_products": [
+        {
+          "id": "POWDER_SMELT",
+          "mat_id": "CHROMIUM"
+        }
+      ],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        2,
+        7,
+        0
+      ],
+      "build_color": [
+        2,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "TIN_OXIDE",
+      "name": "flowers of tin",
+      "names": {
+        "solid": "flowers of tin",
+        "liquid": "flowers of tin",
+        "gas": "flowers of tin",
+        "powder": "flowers of tin",
+        "paste": "flowers of tin",
+        "pressed": "flowers of tin"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 4,
+      "tile": null,
+      "solid_density": 5610,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 12934,
+        "boiling_point": 13420,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "METAL_OXIDE",
+        "TIN_OXIDE"
+      ],
+      "reaction_products": [
+        {
+          "id": "POWDER_SMELT",
+          "mat_id": "TIN"
+        }
+      ],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "URANIUM_OXIDE",
+      "name": "urania",
+      "names": {
+        "solid": "urania",
+        "liquid": "urania",
+        "gas": "urania",
+        "powder": "urania",
+        "paste": "urania",
+        "pressed": "urania"
+      },
+      "material_class": "RAW",
+      "color": "BLACK",
+      "fallback_colors": [],
+      "liquid_color": "BLACK",
+      "gas_color": "BLACK",
+      "value": 8,
+      "tile": null,
+      "solid_density": 10970,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 15157,
+        "boiling_point": 16300,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "METAL_OXIDE"
+      ],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        0
+      ],
+      "build_color": [
+        0,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "ALUMINUM_OXIDE",
+      "name": "alumina",
+      "names": {
+        "solid": "alumina",
+        "liquid": "alumina",
+        "gas": "alumina",
+        "powder": "alumina",
+        "paste": "alumina",
+        "pressed": "alumina"
+      },
+      "material_class": "RAW",
+      "color": "SILVER",
+      "fallback_colors": [],
+      "liquid_color": "SILVER",
+      "gas_color": "SILVER",
+      "value": 6,
+      "tile": null,
+      "solid_density": 3990,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 13730,
+        "boiling_point": 15359,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "METAL_OXIDE"
+      ],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "TITANIUM_OXIDE",
+      "name": "titania",
+      "names": {
+        "solid": "titania",
+        "liquid": "titania",
+        "gas": "titania",
+        "powder": "titania",
+        "paste": "titania",
+        "pressed": "titania"
+      },
+      "material_class": "RAW",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "liquid_color": "WHITE",
+      "gas_color": "WHITE",
+      "value": 10,
+      "tile": null,
+      "solid_density": 4230,
+      "liquid_density": 3300,
+      "molar_mass": 36000,
+      "heat": {
+        "spec_heat": 800,
+        "melting_point": 13317,
+        "boiling_point": 15350,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "fracture": {
+          "IMPACT": 120000,
+          "COMPRESSIVE": 120000,
+          "TENSILE": 15000,
+          "TORSION": 15000,
+          "SHEAR": 15000,
+          "BENDING": 15000
+        },
+        "strain_at_yield": {
+          "IMPACT": 100,
+          "COMPRESSIVE": 100,
+          "TENSILE": 100,
+          "TORSION": 100,
+          "SHEAR": 100,
+          "BENDING": 100
+        },
+        "max_edge": 0
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "METAL_OXIDE"
+      ],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3195 @@
+{
+  "module": {
+    "prefix": "ARGGC_",
+    "name": "ArgMOD Glass & Ceramics",
+    "version": "1.0",
+    "depends_on": [
+      "ARGMOD_"
+    ]
+  },
+  "materials": [
+    {
+      "key": "BISMUTH_OXIDE",
+      "name": "bismuth oxide",
+      "material_class": "STONE",
+      "color": "FLAX",
+      "fallback_colors": [],
+      "value": 4,
+      "solid_density": 8900,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": 11483,
+        "boiling_point": 13402,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "METAL_OXIDE"
+      ],
+      "reaction_products": [
+        {
+          "id": "POWDER_SMELT",
+          "mat_id": "BISMUTH"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "ANTIMONY_OXIDE",
+      "name": "antimony oxide",
+      "material_class": "STONE",
+      "color": "IVORY",
+      "fallback_colors": [],
+      "value": 4,
+      "solid_density": 5433,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": 11179,
+        "boiling_point": 12790,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "METAL_OXIDE"
+      ],
+      "reaction_products": [
+        {
+          "id": "POWDER_SMELT",
+          "mat_id": "ANTIMONY"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GOLD_TIN_CHLORIDE",
+      "name": "gold tin chloride",
+      "material_class": "RAW",
+      "color": "LILAC",
+      "fallback_colors": [],
+      "value": 12,
+      "solid_density": 2010,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": 9900,
+        "boiling_point": 10550,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {},
+      "inorganic_flags": {},
+      "display_color": [
+        5,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "FELDSPAR_GLAZE",
+      "name": "feldspar glaze",
+      "material_class": "STONE",
+      "color": "BRIGHTSTEEL",
+      "fallback_colors": [],
+      "value": 7,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_FELDSPAR_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "IRON_GLAZE",
+      "name": "iron glaze",
+      "material_class": "STONE",
+      "color": "MAHOGANY",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_IRON_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "REDUCED_IRON_GLAZE",
+      "name": "reduced iron glaze",
+      "material_class": "STONE",
+      "color": "AQUAMARINE",
+      "fallback_colors": [],
+      "value": 3,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_REDUCED_IRON_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        2,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "COPPER_GLAZE",
+      "name": "copper glaze",
+      "material_class": "STONE",
+      "color": "EUCALYPTUS",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_COPPER_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        3,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "REDUCED_COPPER_GLAZE",
+      "name": "reduced copper glaze",
+      "material_class": "STONE",
+      "color": "MAROON",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_REDUCED_COPPER_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        4,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "URANIUM_GLAZE",
+      "name": "uranium glaze",
+      "material_class": "STONE",
+      "color": "PUMPKIN",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_URANIUM_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        4,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "MANGANESE_GLAZE",
+      "name": "manganese glaze",
+      "material_class": "STONE",
+      "color": "DARK_VIOLET",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_MANGANESE_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        2,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "CHROMIUM_GLAZE",
+      "name": "chromium glaze",
+      "material_class": "STONE",
+      "color": "EMERALD",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_CHROMIUM_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        2,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "COBALT_GLAZE",
+      "name": "cobalt glaze",
+      "material_class": "STONE",
+      "color": "COBALT",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_COBALT_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        1,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "REDUCED_NICKEL_GLAZE",
+      "name": "reduced nickel glaze",
+      "material_class": "STONE",
+      "color": "DARK_OLIVE",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_NICKEL_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        5,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "NICKEL_GLAZE",
+      "name": "nickel glaze",
+      "material_class": "STONE",
+      "color": "EGGPLANT",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_REDUCED_NICKEL_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        5,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "ZINC_GLAZE",
+      "name": "zinc glaze",
+      "material_class": "STONE",
+      "color": "CLEAR",
+      "fallback_colors": [],
+      "value": 7,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_ZINC_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "SLAG_GLAZE",
+      "name": "slag glaze",
+      "material_class": "STONE",
+      "color": "GRAY",
+      "fallback_colors": [],
+      "value": 5,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_SLAG_GLAZE"
+        },
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "TIN_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        3,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "ANTIMONY_GLAZE",
+      "name": "antimony glaze",
+      "material_class": "STONE",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "value": 7,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_ANTIMONY_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "BISMUTH_GLAZE",
+      "name": "bismuth glaze",
+      "material_class": "STONE",
+      "color": "CLEAR",
+      "fallback_colors": [],
+      "value": 7,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_BISMUTH_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "LEAD_GLAZE",
+      "name": "lead glaze",
+      "material_class": "STONE",
+      "color": "GRAY",
+      "fallback_colors": [],
+      "value": 4,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [
+        {
+          "id": "GLAZE_MAT",
+          "mat_id": "ARGGC_LEAD_GLAZE"
+        }
+      ],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "SALT_GLAZE",
+      "name": "salt glaze",
+      "material_class": "STONE",
+      "color": "CLEAR",
+      "fallback_colors": [],
+      "value": 7,
+      "solid_density": 3253,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GLASS_RED_GOLDSTONE",
+      "name": "red goldstone",
+      "material_class": "GLASS",
+      "color": "MAHOGANY",
+      "fallback_colors": [],
+      "value": 7,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_GLASS": true,
+        "IS_GEM": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        4,
+        7,
+        1
+      ],
+      "build_color": [
+        4,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GLASS_BLUE_GOLDSTONE",
+      "name": "blue goldstone",
+      "material_class": "GLASS",
+      "color": "MIDNIGHT_BLUE",
+      "fallback_colors": [],
+      "value": 12,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_GLASS": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        1,
+        7,
+        0
+      ],
+      "build_color": [
+        1,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "GLASS_PURPLE_GOLDSTONE",
+      "name": "purple goldstone",
+      "material_class": "GLASS",
+      "color": "DARK_INDIGO",
+      "fallback_colors": [],
+      "value": 12,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_GLASS": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        1,
+        7,
+        0
+      ],
+      "build_color": [
+        1,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "GLASS_GREEN_GOLDSTONE",
+      "name": "green goldstone",
+      "material_class": "GLASS",
+      "color": "DARK_GREEN",
+      "fallback_colors": [],
+      "value": 12,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_GLASS": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        1,
+        7,
+        0
+      ],
+      "build_color": [
+        1,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "GLASS_COPPER",
+      "name": "aquamarine glass",
+      "material_class": "GLASS",
+      "color": "AQUA",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        3,
+        7,
+        1
+      ],
+      "build_color": [
+        3,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GLASS_COPPER_REDUCED",
+      "name": "copper ruby glass",
+      "material_class": "GLASS",
+      "color": "CARMINE",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        4,
+        7,
+        0
+      ],
+      "build_color": [
+        4,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "GLASS_IRON",
+      "name": "amber glass",
+      "material_class": "GLASS",
+      "color": "COPPER",
+      "fallback_colors": [],
+      "value": 8,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        0
+      ],
+      "build_color": [
+        6,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "GLASS_IRON_REDUCED",
+      "name": "ferrous glass",
+      "material_class": "GLASS",
+      "color": "PALE_BLUE",
+      "fallback_colors": [],
+      "value": 8,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        3,
+        7,
+        1
+      ],
+      "build_color": [
+        3,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GLASS_TIN",
+      "name": "milk glass",
+      "material_class": "GLASS",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "value": 8,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GLASS_NICKEL",
+      "name": "violet glass",
+      "material_class": "GLASS",
+      "color": "VIOLET",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        5,
+        7,
+        0
+      ],
+      "build_color": [
+        5,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "GLASS_MANGANESE",
+      "name": "amethyst glass",
+      "material_class": "GLASS",
+      "color": "AMETHYST",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        5,
+        7,
+        0
+      ],
+      "build_color": [
+        5,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "GLASS_CHROMIUM",
+      "name": "emerald glass",
+      "material_class": "GLASS",
+      "color": "APPLE_GREEN",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        2,
+        7,
+        1
+      ],
+      "build_color": [
+        2,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GLASS_COBALT",
+      "name": "cobalt glass",
+      "material_class": "GLASS",
+      "color": "DEEP_SEA_BLUE",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        1,
+        7,
+        0
+      ],
+      "build_color": [
+        1,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "GLASS_ZINC",
+      "name": "zinc crystal",
+      "material_class": "GLASS",
+      "color": "CLEAR",
+      "fallback_colors": [],
+      "value": 8,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GLASS_LEAD",
+      "name": "lead crystal",
+      "material_class": "GLASS",
+      "color": "CLEAR",
+      "fallback_colors": [],
+      "value": 8,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GLASS_URANIUM",
+      "name": "canary glass",
+      "material_class": "GLASS",
+      "color": "GRAY",
+      "fallback_colors": [],
+      "value": 10,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        2,
+        7,
+        1
+      ],
+      "build_color": [
+        2,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GLASS_SLAG",
+      "name": "slag glass",
+      "material_class": "GLASS",
+      "color": "RIVER_BLUE",
+      "fallback_colors": [],
+      "value": 6,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        3,
+        7,
+        1
+      ],
+      "build_color": [
+        3,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GLASS_BISMUTH",
+      "name": "bismuth crystal",
+      "material_class": "GLASS",
+      "color": "CLEAR",
+      "fallback_colors": [],
+      "value": 8,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ],
+      "build_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GLASS_GOLD",
+      "name": "gold ruby glass",
+      "material_class": "GLASS",
+      "color": "SCARLET",
+      "fallback_colors": [],
+      "value": 25,
+      "solid_density": 2600,
+      "liquid_density": 2240,
+      "heat": {
+        "spec_heat": 700,
+        "melting_point": 13600,
+        "boiling_point": 16000,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "fracture": {
+          "IMPACT": 1000000,
+          "COMPRESSIVE": 1000000,
+          "TENSILE": 33000,
+          "TORSION": 33000,
+          "SHEAR": 33000,
+          "BENDING": 33000
+        },
+        "strain_at_yield": {
+          "IMPACT": 2222,
+          "COMPRESSIVE": 2222,
+          "TENSILE": 47,
+          "TORSION": 113,
+          "SHEAR": 113,
+          "BENDING": 47
+        },
+        "max_edge": 15000
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "IS_GLASS": true,
+        "ITEMS_HARD": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        4,
+        7,
+        0
+      ],
+      "build_color": [
+        4,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "URANIUM_FLUX",
+      "name": "uranium flux",
+      "material_class": "STONE",
+      "color": "LEMON",
+      "fallback_colors": [],
+      "value": 6,
+      "solid_density": 2711,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "COBALT_FLUX",
+      "name": "cobalt flux",
+      "material_class": "STONE",
+      "color": "DARK_AZURE",
+      "fallback_colors": [],
+      "value": 4,
+      "solid_density": 2711,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        1,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "IRON_FLUX",
+      "name": "iron flux",
+      "material_class": "STONE",
+      "color": "BURNT_UMBER",
+      "fallback_colors": [],
+      "value": 3,
+      "solid_density": 2711,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        6,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "COPPER_FLUX",
+      "name": "copper flux",
+      "material_class": "STONE",
+      "color": "CHESTNUT",
+      "fallback_colors": [],
+      "value": 3,
+      "solid_density": 2711,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        4,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "NICKEL_FLUX",
+      "name": "nickel flux",
+      "material_class": "STONE",
+      "color": "MOSS_GREEN",
+      "fallback_colors": [],
+      "value": 4,
+      "solid_density": 2711,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        2,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "MANGANESE_FLUX",
+      "name": "manganese flux",
+      "material_class": "STONE",
+      "color": "GRAY",
+      "fallback_colors": [],
+      "value": 3,
+      "solid_density": 2711,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "CHROMIUM_FLUX",
+      "name": "chromium flux",
+      "material_class": "STONE",
+      "color": "GREEN",
+      "fallback_colors": [],
+      "value": 4,
+      "solid_density": 2711,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        2,
+        7,
+        0
+      ]
+    },
+    {
+      "key": "SLAG_FLUX",
+      "name": "slag flux",
+      "material_class": "STONE",
+      "color": "GRAY",
+      "fallback_colors": [],
+      "value": 3,
+      "solid_density": 2711,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        0,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "TIN_FLUX",
+      "name": "tin flux",
+      "material_class": "STONE",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "value": 2,
+      "solid_density": 2711,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "MILK_GLASS"
+      ],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "ZINC_FLUX",
+      "name": "zinc flux",
+      "material_class": "STONE",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "value": 2,
+      "solid_density": 2711,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "ANTIMONY_FLUX",
+      "name": "antimony flux",
+      "material_class": "STONE",
+      "color": "WHITE",
+      "fallback_colors": [],
+      "value": 2,
+      "solid_density": 2711,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [
+        "MILK_GLASS"
+      ],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        7,
+        7,
+        1
+      ]
+    },
+    {
+      "key": "GOLD_FLUX",
+      "name": "gold flux",
+      "material_class": "STONE",
+      "color": "PURPLE",
+      "fallback_colors": [],
+      "value": 12,
+      "solid_density": 2711,
+      "heat": {
+        "spec_heat": null,
+        "melting_point": null,
+        "boiling_point": null,
+        "ignite_point": null,
+        "heatdam_point": null,
+        "colddam_point": null,
+        "mat_fixed_temp": null
+      },
+      "strength": {
+        "yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "fracture": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "strain_at_yield": {
+          "IMPACT": null,
+          "COMPRESSIVE": null,
+          "TENSILE": null,
+          "TORSION": null,
+          "SHEAR": null,
+          "BENDING": null
+        },
+        "max_edge": null
+      },
+      "gem_names": null,
+      "reaction_classes": [],
+      "reaction_products": [],
+      "material_flags": {
+        "IS_STONE": true,
+        "NO_STONE_STOCKPILE": true
+      },
+      "inorganic_flags": {},
+      "display_color": [
+        5,
+        7,
+        1
+      ]
+    }
+  ]
+}
