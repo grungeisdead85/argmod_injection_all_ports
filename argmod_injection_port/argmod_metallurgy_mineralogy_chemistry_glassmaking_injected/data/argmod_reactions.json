@@ -2,7 +2,7 @@
   "module": {
     "prefix": "ARGMOD_",
     "name": "ArgMOD",
-    "version": "1.0"
+    "version": "1.0.2"
   },
   "reactions": [
     {
@@ -347,7 +347,7 @@
           "quantity": 300
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 300,
           "reaction_class": "FLUX_PROCESSED",
@@ -356,10 +356,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -417,7 +417,7 @@
           "quantity": 150
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 150,
           "reaction_class": "FLUX_PROCESSED",
@@ -426,10 +426,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -487,7 +487,7 @@
           "quantity": 300
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 300,
           "reaction_class": "FLUX_PROCESSED",
@@ -496,10 +496,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -569,7 +569,7 @@
           "quantity": 150
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 300,
           "reaction_class": "FLUX_PROCESSED",
@@ -578,10 +578,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -657,7 +657,7 @@
           "quantity": 150
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 300,
           "reaction_class": "FLUX_PROCESSED",
@@ -666,10 +666,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 2,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -757,7 +757,7 @@
           "quantity": 300
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 300,
           "reaction_class": "FLUX_PROCESSED",
@@ -766,10 +766,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -838,7 +838,7 @@
           "quantity": 300
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 300,
           "reaction_class": "FLUX_PROCESSED",
@@ -847,10 +847,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -1484,7 +1484,7 @@
       },
       "reagents": [
         {
-          "code": "molten copper heel",
+          "code": "molten_copper_heel",
           "type": "METAL_BAR",
           "quantity": 1350,
           "mat_id": "COPPER"
@@ -1499,7 +1499,7 @@
           }
         },
         {
-          "code": "alumina bag",
+          "code": "alumina_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "alumina",
@@ -1514,7 +1514,7 @@
           "quantity": 150
         },
         {
-          "code": "cryolite flux",
+          "code": "cryolite_flux",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "CRYOLITE",
@@ -1523,17 +1523,17 @@
           }
         },
         {
-          "code": "cryolite flux bag",
+          "code": "cryolite_flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "cryolite flux",
+          "contains": "cryolite_flux",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "salt flux",
+          "code": "salt_flux",
           "type": "POWDER_ANY",
           "quantity": 150,
           "reaction_class": "NONFERROUS_COVER_FLUX",
@@ -1542,10 +1542,10 @@
           }
         },
         {
-          "code": "salt flux bag",
+          "code": "salt_flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "salt flux",
+          "contains": "salt_flux",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -1638,7 +1638,7 @@
           "mat_id": "FERRONICKEL"
         },
         {
-          "code": "salt flux",
+          "code": "salt_flux",
           "type": "POWDER_ANY",
           "quantity": 150,
           "reaction_class": "NONFERROUS_COVER_FLUX",
@@ -1647,10 +1647,10 @@
           }
         },
         {
-          "code": "salt flux bag",
+          "code": "salt_flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "salt flux",
+          "contains": "salt_flux",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -1703,7 +1703,7 @@
           "mat_id": "ARGMOD_MONEL"
         },
         {
-          "code": "salt flux",
+          "code": "salt_flux",
           "type": "POWDER_ANY",
           "quantity": 150,
           "reaction_class": "NONFERROUS_COVER_FLUX",
@@ -1712,10 +1712,10 @@
           }
         },
         {
-          "code": "salt flux bag",
+          "code": "salt_flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "salt flux",
+          "contains": "salt_flux",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -1774,7 +1774,7 @@
           "mat_id": "NICKEL"
         },
         {
-          "code": "salt flux",
+          "code": "salt_flux",
           "type": "POWDER_ANY",
           "quantity": 150,
           "reaction_class": "NONFERROUS_COVER_FLUX",
@@ -1783,10 +1783,10 @@
           }
         },
         {
-          "code": "salt flux bag",
+          "code": "salt_flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "salt flux",
+          "contains": "salt_flux",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -2721,7 +2721,7 @@
           }
         },
         {
-          "code": "alumina bag",
+          "code": "alumina_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -2749,7 +2749,7 @@
           "mat_id": "ARGMOD_ALUMINUM_OXIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "alumina bag"
+          "to_container": "alumina_bag"
         }
       ]
     },
@@ -3093,7 +3093,7 @@
           "quantity": 150
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 150,
           "reaction_class": "FLUX_PROCESSED",
@@ -3102,10 +3102,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -3121,7 +3121,7 @@
           }
         },
         {
-          "code": "sand bag",
+          "code": "sand_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "sand",
@@ -3171,7 +3171,7 @@
           "mat_id": "FERROSILICON_POOR"
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -3180,17 +3180,17 @@
           }
         },
         {
-          "code": "vitriol jug",
+          "code": "vitriol_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "vitriol bag",
+          "code": "vitriol_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -3218,7 +3218,7 @@
           "mat_id": "IRON_SULFATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "vitriol bag"
+          "to_container": "vitriol_bag"
         }
       ]
     },
@@ -3250,7 +3250,7 @@
           }
         },
         {
-          "code": "magnesia bag",
+          "code": "magnesia_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "magnesia",
@@ -3269,7 +3269,7 @@
           }
         },
         {
-          "code": "quicklime bag",
+          "code": "quicklime_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "quicklime",
@@ -3316,7 +3316,7 @@
       },
       "reagents": [
         {
-          "code": "soda ash",
+          "code": "soda_ash",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_SODIUM_CARBONATE",
@@ -3325,10 +3325,10 @@
           }
         },
         {
-          "code": "soda ash bag",
+          "code": "soda_ash_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "soda ash",
+          "contains": "soda_ash",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -3365,7 +3365,7 @@
       },
       "reagents": [
         {
-          "code": "muriate of soda-alum",
+          "code": "muriate_of_soda-alum",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "ARGMOD_SODIUM_ALUMINUM_CHLORIDE",
@@ -3374,17 +3374,17 @@
           }
         },
         {
-          "code": "muriate of soda-alum bag",
+          "code": "muriate_of_soda-alum bag",
           "type": "CONTAINER",
           "quantity": 2,
-          "contains": "muriate of soda-alum",
+          "contains": "muriate_of_soda-alum",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "cryolite flux",
+          "code": "cryolite_flux",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "CRYOLITE",
@@ -3393,17 +3393,17 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "cryolite flux",
+          "contains": "cryolite_flux",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "slag salt bag",
+          "code": "slag_salt_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -3437,7 +3437,7 @@
           "mat_id": "ARGMOD_SODIUM_CHLORIDE",
           "count": 2,
           "dimension": 150,
-          "to_container": "slag salt bag"
+          "to_container": "slag_salt_bag"
         }
       ]
     },
@@ -3466,7 +3466,7 @@
           "mat_id": "NATIVE_PLATINUM"
         },
         {
-          "code": "aqua regia",
+          "code": "aqua_regia",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_AQUA_REGIA",
@@ -3475,17 +3475,17 @@
           }
         },
         {
-          "code": "aqua regia jug",
+          "code": "aqua_regia_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "aqua regia",
+          "contains": "aqua_regia",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "salt of ammon",
+          "code": "salt_of_ammon",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_AMMONIUM_CHLORIDE",
@@ -3494,10 +3494,10 @@
           }
         },
         {
-          "code": "salt of ammon bag",
+          "code": "salt_of_ammon_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "salt of ammon",
+          "contains": "salt_of_ammon",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -3552,7 +3552,7 @@
           "mat_id": "PITCHBLENDE"
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -3561,10 +3561,10 @@
           }
         },
         {
-          "code": "oil of vitriol jug",
+          "code": "oil_of_vitriol_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -3580,7 +3580,7 @@
           }
         },
         {
-          "code": "caustic bucket",
+          "code": "caustic_bucket",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "caustic",
@@ -3590,7 +3590,7 @@
           }
         },
         {
-          "code": "spirit of fluor",
+          "code": "spirit_of_fluor",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_HYDROFLUORIC_ACID",
@@ -3599,10 +3599,10 @@
           }
         },
         {
-          "code": "spirit of fluor jug",
+          "code": "spirit_of_fluor_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of fluor",
+          "contains": "spirit_of_fluor",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -3655,7 +3655,7 @@
           "mat_id": "PITCHBLENDE"
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 300,
           "reaction_class": "FLUX_PROCESSED",
@@ -3664,10 +3664,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -3720,7 +3720,7 @@
           "mat_id": "CARNOTITE"
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -3729,10 +3729,10 @@
           }
         },
         {
-          "code": "oil of vitriol jug",
+          "code": "oil_of_vitriol_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -3748,7 +3748,7 @@
           }
         },
         {
-          "code": "caustic bucket",
+          "code": "caustic_bucket",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "caustic",
@@ -3767,7 +3767,7 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "quicklime",
@@ -3777,7 +3777,7 @@
           }
         },
         {
-          "code": "spirit of fluor",
+          "code": "spirit_of_fluor",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_HYDROFLUORIC_ACID",
@@ -3786,17 +3786,17 @@
           }
         },
         {
-          "code": "spirit of fluor jug",
+          "code": "spirit_of_fluor_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of fluor",
+          "contains": "spirit_of_fluor",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "salt of ammon",
+          "code": "salt_of_ammon",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_AMMONIUM_CHLORIDE",
@@ -3805,10 +3805,10 @@
           }
         },
         {
-          "code": "salt of ammon bag",
+          "code": "salt_of_ammon_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "salt of ammon",
+          "contains": "salt_of_ammon",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -3870,7 +3870,7 @@
           "mat_id": "CARNOTITE"
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 300,
           "reaction_class": "FLUX_PROCESSED",
@@ -3879,10 +3879,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -3941,7 +3941,7 @@
           "mat_id": "WOLFRAMITE"
         },
         {
-          "code": "soda ash",
+          "code": "soda_ash",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_SODIUM_CARBONATE",
@@ -3950,17 +3950,17 @@
           }
         },
         {
-          "code": "soda ash bag",
+          "code": "soda_ash_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "soda ash",
+          "contains": "soda_ash",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "spirit of muria",
+          "code": "spirit_of_muria",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
@@ -3969,17 +3969,17 @@
           }
         },
         {
-          "code": "spirit of muria jug",
+          "code": "spirit_of_muria_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of muria",
+          "contains": "spirit_of_muria",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "ammoniacal liquor",
+          "code": "ammoniacal_liquor",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_AMMONIA_SOLUTION",
@@ -3988,17 +3988,17 @@
           }
         },
         {
-          "code": "ammoniacal liquor jug",
+          "code": "ammoniacal_liquor_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "ammoniacal liquor",
+          "contains": "ammoniacal_liquor",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 150,
           "reaction_class": "FLUX_PROCESSED",
@@ -4007,10 +4007,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -4069,7 +4069,7 @@
           "mat_id": "SCHEELITE"
         },
         {
-          "code": "spirit of muria",
+          "code": "spirit_of_muria",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
@@ -4078,17 +4078,17 @@
           }
         },
         {
-          "code": "spirit of muria jug",
+          "code": "spirit_of_muria_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of muria",
+          "contains": "spirit_of_muria",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "ammoniacal liquor",
+          "code": "ammoniacal_liquor",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_AMMONIA_SOLUTION",
@@ -4097,17 +4097,17 @@
           }
         },
         {
-          "code": "ammoniacal liquor jug",
+          "code": "ammoniacal_liquor_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "ammoniacal liquor",
+          "contains": "ammoniacal_liquor",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 150,
           "reaction_class": "FLUX_PROCESSED",
@@ -4116,10 +4116,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -4172,7 +4172,7 @@
           "mat_id": "SCHEELITE"
         },
         {
-          "code": "spirit of muria",
+          "code": "spirit_of_muria",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
@@ -4181,17 +4181,17 @@
           }
         },
         {
-          "code": "spirit of muria jug",
+          "code": "spirit_of_muria_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of muria",
+          "contains": "spirit_of_muria",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "ammoniacal liquor",
+          "code": "ammoniacal_liquor",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_AMMONIA_SOLUTION",
@@ -4200,10 +4200,10 @@
           }
         },
         {
-          "code": "ammoniacal liquor jug",
+          "code": "ammoniacal_liquor_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "ammoniacal liquor",
+          "contains": "ammoniacal_liquor",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -4219,7 +4219,7 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "quicklime",
@@ -4269,7 +4269,7 @@
       },
       "reagents": [
         {
-          "code": "muriate of titan",
+          "code": "muriate_of_titan",
           "type": "LIQUID_INORGANIC",
           "quantity": 300,
           "mat_id": "ARGMOD_TITANIUM_CHLORIDE",
@@ -4278,17 +4278,17 @@
           }
         },
         {
-          "code": "muriate jug",
+          "code": "muriate_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "muriate of titan",
+          "contains": "muriate_of_titan",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "slag salt bag",
+          "code": "slag_salt_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -4316,7 +4316,7 @@
           "mat_id": "ARGMOD_MAGNESIUM_CHLORIDE",
           "count": 2,
           "dimension": 150,
-          "to_container": "slag salt bag"
+          "to_container": "slag_salt_bag"
         }
       ]
     },
@@ -4339,7 +4339,7 @@
       },
       "reagents": [
         {
-          "code": "muriate of titan",
+          "code": "muriate_of_titan",
           "type": "LIQUID_INORGANIC",
           "quantity": 300,
           "mat_id": "ARGMOD_TITANIUM_CHLORIDE",
@@ -4348,17 +4348,17 @@
           }
         },
         {
-          "code": "muriate jug",
+          "code": "muriate_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "muriate of titan",
+          "contains": "muriate_of_titan",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "slag salt bag",
+          "code": "slag_salt_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -4386,7 +4386,7 @@
           "mat_id": "ARGMOD_SODIUM_CHLORIDE",
           "count": 2,
           "dimension": 150,
-          "to_container": "slag salt bag"
+          "to_container": "slag_salt_bag"
         }
       ]
     },
@@ -4415,7 +4415,7 @@
           "mat_id": "VANADINITE"
         },
         {
-          "code": "soda ash",
+          "code": "soda_ash",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_SODIUM_CARBONATE",
@@ -4424,17 +4424,17 @@
           }
         },
         {
-          "code": "soda ash bag",
+          "code": "soda_ash_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "soda ash",
+          "contains": "soda_ash",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "salt of ammon",
+          "code": "salt_of_ammon",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_AMMONIUM_CHLORIDE",
@@ -4443,10 +4443,10 @@
           }
         },
         {
-          "code": "salt of ammon bag",
+          "code": "salt_of_ammon_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "salt of ammon",
+          "contains": "salt_of_ammon",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -4462,7 +4462,7 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "quicklime",
@@ -4524,7 +4524,7 @@
           "mat_id": "VANADINITE"
         },
         {
-          "code": "soda ash",
+          "code": "soda_ash",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_SODIUM_CARBONATE",
@@ -4533,17 +4533,17 @@
           }
         },
         {
-          "code": "soda ash bag",
+          "code": "soda_ash_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "soda ash",
+          "contains": "soda_ash",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "salt of ammon",
+          "code": "salt_of_ammon",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_AMMONIUM_CHLORIDE",
@@ -4552,17 +4552,17 @@
           }
         },
         {
-          "code": "salt of ammon bag",
+          "code": "salt_of_ammon_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "salt of ammon",
+          "contains": "salt_of_ammon",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 150,
           "reaction_class": "FLUX_PROCESSED",
@@ -4571,10 +4571,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -4642,7 +4642,7 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "quicklime",
@@ -4698,7 +4698,7 @@
           "mat_id": "PATRONITE"
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 300,
           "reaction_class": "FLUX_PROCESSED",
@@ -4707,10 +4707,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -4772,7 +4772,7 @@
           }
         },
         {
-          "code": "quicklime bag",
+          "code": "quicklime_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "quicklime",
@@ -4828,7 +4828,7 @@
           "mat_id": "MOLYBDENITE"
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 300,
           "reaction_class": "FLUX_PROCESSED",
@@ -4837,10 +4837,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -4893,7 +4893,7 @@
           "metal_id": "FERROCHROME"
         },
         {
-          "code": "soda ash",
+          "code": "soda_ash",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_SODIUM_CARBONATE",
@@ -4902,17 +4902,17 @@
           }
         },
         {
-          "code": "soda ash bag",
+          "code": "soda_ash_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "soda ash",
+          "contains": "soda_ash",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 150,
           "reaction_class": "FLUX_PROCESSED",
@@ -4921,17 +4921,17 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -4940,17 +4940,17 @@
           }
         },
         {
-          "code": "oil of vitriol jug",
+          "code": "oil_of_vitriol_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "green vitriol",
+          "code": "green_vitriol",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "IRON_SULFATE",
@@ -4959,17 +4959,17 @@
           }
         },
         {
-          "code": "green vitriol bag",
+          "code": "green_vitriol_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "green vitriol",
+          "contains": "green_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "salt cake bag",
+          "code": "salt_cake_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -5003,7 +5003,7 @@
           "mat_id": "ARGMOD_SODIUM_SULFATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "salt cake bag"
+          "to_container": "salt_cake_bag"
         },
         {
           "type": "BAR",
@@ -5038,7 +5038,7 @@
           "metal_id": "FERRONICKEL"
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 150,
           "reaction_class": "FLUX_PROCESSED",
@@ -5047,10 +5047,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -5066,7 +5066,7 @@
           }
         },
         {
-          "code": "caustic bucket",
+          "code": "caustic_bucket",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "caustic",
@@ -5076,7 +5076,7 @@
           }
         },
         {
-          "code": "spirit of niter",
+          "code": "spirit_of_niter",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_NITRIC_ACID",
@@ -5085,10 +5085,10 @@
           }
         },
         {
-          "code": "spirit of niter jug",
+          "code": "spirit_of_niter_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of niter",
+          "contains": "spirit_of_niter",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -5146,7 +5146,7 @@
           "metal_id": "FERROMANGANESE"
         },
         {
-          "code": "lime or quicklime",
+          "code": "lime_or_quicklime",
           "type": "POWDER",
           "quantity": 150,
           "reaction_class": "FLUX_PROCESSED",
@@ -5155,10 +5155,10 @@
           }
         },
         {
-          "code": "flux bag",
+          "code": "flux_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "lime or quicklime",
+          "contains": "lime_or_quicklime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -5174,7 +5174,7 @@
           }
         },
         {
-          "code": "caustic bucket",
+          "code": "caustic_bucket",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "caustic",
@@ -5184,7 +5184,7 @@
           }
         },
         {
-          "code": "spirit of niter",
+          "code": "spirit_of_niter",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_NITRIC_ACID",
@@ -5193,10 +5193,10 @@
           }
         },
         {
-          "code": "spirit of niter jug",
+          "code": "spirit_of_niter_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of niter",
+          "contains": "spirit_of_niter",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -5247,7 +5247,7 @@
       },
       "reagents": [
         {
-          "code": "soda ash",
+          "code": "soda_ash",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_SODIUM_CARBONATE",
@@ -5256,10 +5256,10 @@
           }
         },
         {
-          "code": "soda ash container",
+          "code": "soda_ash_container",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "soda ash",
+          "contains": "soda_ash",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -5275,7 +5275,7 @@
           }
         },
         {
-          "code": "quicklime container",
+          "code": "quicklime_container",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "quicklime",
@@ -5351,7 +5351,7 @@
           }
         },
         {
-          "code": "quicklime container",
+          "code": "quicklime_container",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "quicklime",
@@ -5423,7 +5423,7 @@
           }
         },
         {
-          "code": "caustic container",
+          "code": "caustic_container",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "caustic",
@@ -5443,7 +5443,7 @@
           }
         },
         {
-          "code": "oil container",
+          "code": "oil_container",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "oil",
@@ -5599,7 +5599,7 @@
       },
       "reagents": [
         {
-          "code": "potassium sulfate",
+          "code": "potassium_sulfate",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_POTASSIUM_SULFATE",
@@ -5608,10 +5608,10 @@
           }
         },
         {
-          "code": "potassium sulfate container",
+          "code": "potassium_sulfate_container",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "potassium sulfate",
+          "contains": "potassium_sulfate",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -5641,7 +5641,7 @@
       },
       "reagents": [
         {
-          "code": "ammoniacal vitriol",
+          "code": "ammoniacal_vitriol",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_AMMONIUM_SULFATE",
@@ -5650,10 +5650,10 @@
           }
         },
         {
-          "code": "ammoniacal vitriol container",
+          "code": "ammoniacal_vitriol_container",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "ammoniacal vitriol",
+          "contains": "ammoniacal_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -5698,7 +5698,7 @@
           }
         },
         {
-          "code": "vitriol bag",
+          "code": "vitriol_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "vitriol",
@@ -5708,7 +5708,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -5719,7 +5719,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -5735,7 +5735,7 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
@@ -5745,7 +5745,7 @@
           },
           "count": 1,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         }
       ]
     },
@@ -5765,7 +5765,7 @@
       },
       "reagents": [
         {
-          "code": "green vitriol",
+          "code": "green_vitriol",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "IRON_SULFATE",
@@ -5774,17 +5774,17 @@
           }
         },
         {
-          "code": "vitriol bag",
+          "code": "vitriol_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "green vitriol",
+          "contains": "green_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -5795,7 +5795,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -5811,14 +5811,14 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "IRON_OXIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         }
       ]
     },
@@ -5838,7 +5838,7 @@
       },
       "reagents": [
         {
-          "code": "blue vitriol",
+          "code": "blue_vitriol",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "COPPER_SULFATE",
@@ -5847,17 +5847,17 @@
           }
         },
         {
-          "code": "vitriol bag",
+          "code": "vitriol_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "blue vitriol",
+          "contains": "blue_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -5868,7 +5868,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -5884,14 +5884,14 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "COPPER_OXIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         }
       ]
     },
@@ -5911,7 +5911,7 @@
       },
       "reagents": [
         {
-          "code": "white vitriol",
+          "code": "white_vitriol",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ZINC_SULFATE",
@@ -5920,17 +5920,17 @@
           }
         },
         {
-          "code": "vitriol bag",
+          "code": "vitriol_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "white vitriol",
+          "contains": "white_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -5941,7 +5941,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -5957,14 +5957,14 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ZINC_OXIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         }
       ]
     },
@@ -5984,7 +5984,7 @@
       },
       "reagents": [
         {
-          "code": "nickel vitriol",
+          "code": "nickel_vitriol",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "NICKEL_SULFATE",
@@ -5993,17 +5993,17 @@
           }
         },
         {
-          "code": "vitriol bag",
+          "code": "vitriol_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "nickel vitriol",
+          "contains": "nickel_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -6014,7 +6014,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6030,14 +6030,14 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "NICKEL_OXIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         }
       ]
     },
@@ -6057,7 +6057,7 @@
       },
       "reagents": [
         {
-          "code": "red vitriol",
+          "code": "red_vitriol",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "COBALT_SULFATE",
@@ -6066,17 +6066,17 @@
           }
         },
         {
-          "code": "vitriol bag",
+          "code": "vitriol_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "red vitriol",
+          "contains": "red_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -6087,7 +6087,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6103,14 +6103,14 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "COBALT_OXIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         }
       ]
     },
@@ -6130,7 +6130,7 @@
       },
       "reagents": [
         {
-          "code": "pink vitriol",
+          "code": "pink_vitriol",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "MANGANESE_SULFATE",
@@ -6139,17 +6139,17 @@
           }
         },
         {
-          "code": "vitriol bag",
+          "code": "vitriol_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "pink vitriol",
+          "contains": "pink_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -6160,7 +6160,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6176,14 +6176,14 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "MANGANESE_OXIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         }
       ]
     },
@@ -6212,7 +6212,7 @@
           }
         },
         {
-          "code": "alum bag",
+          "code": "alum_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "alum",
@@ -6222,7 +6222,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -6233,7 +6233,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6243,7 +6243,7 @@
           }
         },
         {
-          "code": "alumina bag",
+          "code": "alumina_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6259,21 +6259,21 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_POTASSIUM_SULFATE",
           "count": 2,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_ALUMINUM_OXIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "alumina bag"
+          "to_container": "alumina_bag"
         }
       ]
     },
@@ -6312,7 +6312,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -6322,7 +6322,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6332,7 +6332,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -6349,7 +6349,7 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 4,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
@@ -6359,7 +6359,7 @@
           },
           "count": 1,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -6399,7 +6399,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -6409,7 +6409,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6419,7 +6419,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6429,7 +6429,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -6446,7 +6446,7 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
@@ -6456,7 +6456,7 @@
           },
           "count": 4,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         },
         {
           "type": "POWDER_MISC",
@@ -6466,7 +6466,7 @@
           },
           "count": 1,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -6502,7 +6502,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -6512,7 +6512,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6522,7 +6522,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6532,7 +6532,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -6549,14 +6549,14 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "IRON_OXIDE",
           "count": 4,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         },
         {
           "type": "POWDER_MISC",
@@ -6565,7 +6565,7 @@
             "product_code": "SULFATE_RESIDUE"
           },
           "count": 1,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -6601,7 +6601,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -6611,7 +6611,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6621,7 +6621,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6631,7 +6631,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -6648,14 +6648,14 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "COPPER_OXIDE",
           "count": 4,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         },
         {
           "type": "POWDER_MISC",
@@ -6665,7 +6665,7 @@
           },
           "count": 1,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -6701,7 +6701,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -6711,7 +6711,7 @@
           }
         },
         {
-          "code": "iron residue bag",
+          "code": "iron_residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6721,7 +6721,7 @@
           }
         },
         {
-          "code": "copper residue bag",
+          "code": "copper_residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6731,7 +6731,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6741,7 +6741,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -6758,21 +6758,21 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "COPPER_OXIDE",
           "count": 2,
           "dimension": 150,
-          "to_container": "copper residue bag"
+          "to_container": "copper_residue_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "IRON_OXIDE",
           "count": 2,
           "dimension": 150,
-          "to_container": "iron residue bag"
+          "to_container": "iron_residue_bag"
         },
         {
           "type": "POWDER_MISC",
@@ -6782,7 +6782,7 @@
           },
           "count": 1,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -6818,7 +6818,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -6828,7 +6828,7 @@
           }
         },
         {
-          "code": "iron residue bag",
+          "code": "iron_residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6838,7 +6838,7 @@
           }
         },
         {
-          "code": "copper residue bag",
+          "code": "copper_residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6848,7 +6848,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6858,7 +6858,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -6875,21 +6875,21 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "NICKEL_OXIDE",
           "count": 2,
           "dimension": 150,
-          "to_container": "copper residue bag"
+          "to_container": "copper_residue_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "IRON_OXIDE",
           "count": 2,
           "dimension": 150,
-          "to_container": "iron residue bag"
+          "to_container": "iron_residue_bag"
         },
         {
           "type": "POWDER_MISC",
@@ -6899,7 +6899,7 @@
           },
           "count": 1,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -6935,7 +6935,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -6945,7 +6945,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6955,7 +6955,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -6965,7 +6965,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -6982,14 +6982,14 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ZINC_OXIDE",
           "count": 4,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         },
         {
           "type": "POWDER_MISC",
@@ -6999,7 +6999,7 @@
           },
           "count": 1,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -7035,7 +7035,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -7045,7 +7045,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7055,7 +7055,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7065,7 +7065,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -7082,14 +7082,14 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "COBALT_OXIDE",
           "count": 4,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         },
         {
           "type": "POWDER_MISC",
@@ -7099,7 +7099,7 @@
           },
           "count": 1,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -7135,7 +7135,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -7145,7 +7145,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7155,7 +7155,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7165,7 +7165,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -7182,14 +7182,14 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "NICKEL_OXIDE",
           "count": 4,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         },
         {
           "type": "POWDER_MISC",
@@ -7199,7 +7199,7 @@
           },
           "count": 1,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -7235,7 +7235,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -7245,7 +7245,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7255,7 +7255,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7265,7 +7265,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -7282,14 +7282,14 @@
           "mat_id": "ARGMOD_SULFURIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "MANGANESE_OXIDE",
           "count": 4,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         },
         {
           "type": "POWDER_MISC",
@@ -7298,7 +7298,7 @@
             "product_code": "SULFATE_RESIDUE"
           },
           "count": 1,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -7331,7 +7331,7 @@
           }
         },
         {
-          "code": "vitriol bag",
+          "code": "vitriol_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "vitriol",
@@ -7351,7 +7351,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -7361,7 +7361,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -7372,7 +7372,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7382,7 +7382,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7398,7 +7398,7 @@
           "mat_id": "ARGMOD_NITRIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
@@ -7408,7 +7408,7 @@
           },
           "count": 1,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         },
         {
           "type": "POWDER_MISC",
@@ -7418,7 +7418,7 @@
           },
           "count": 1,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -7447,7 +7447,7 @@
           }
         },
         {
-          "code": "alum bag",
+          "code": "alum_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "alum",
@@ -7457,7 +7457,7 @@
           }
         },
         {
-          "code": "potash saltpeter",
+          "code": "potash_saltpeter",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "ARGMOD_POTASSIUM_NITRATE",
@@ -7466,17 +7466,17 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "potash saltpeter",
+          "contains": "potash_saltpeter",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -7487,7 +7487,7 @@
           }
         },
         {
-          "code": "residue bag",
+          "code": "residue_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7497,7 +7497,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7513,21 +7513,21 @@
           "mat_id": "ARGMOD_NITRIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_ALUMINUM_OXIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "residue bag"
+          "to_container": "residue_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_POTASSIUM_SULFATE",
           "count": 2,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -7547,7 +7547,7 @@
       },
       "reagents": [
         {
-          "code": "bisulfate of potash",
+          "code": "bisulfate_of_potash",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_POTASSIUM_BISULFATE",
@@ -7556,17 +7556,17 @@
           }
         },
         {
-          "code": "bisulfate bag",
+          "code": "bisulfate_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "bisulfate of potash",
+          "contains": "bisulfate_of_potash",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "potash saltpeter",
+          "code": "potash_saltpeter",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_POTASSIUM_NITRATE",
@@ -7575,17 +7575,17 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "potash saltpeter",
+          "contains": "potash_saltpeter",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -7596,7 +7596,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7612,14 +7612,14 @@
           "mat_id": "ARGMOD_NITRIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_POTASSIUM_SULFATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -7639,7 +7639,7 @@
       },
       "reagents": [
         {
-          "code": "bisulfate of soda",
+          "code": "bisulfate_of_soda",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_SODIUM_BISULFATE",
@@ -7648,10 +7648,10 @@
           }
         },
         {
-          "code": "bisulfate bag",
+          "code": "bisulfate_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "bisulfate of soda",
+          "contains": "bisulfate_of_soda",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -7667,7 +7667,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -7677,7 +7677,7 @@
           }
         },
         {
-          "code": "glass jug",
+          "code": "glass_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -7688,7 +7688,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7704,14 +7704,14 @@
           "mat_id": "ARGMOD_NITRIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "glass jug"
+          "to_container": "glass_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_SODIUM_SULFATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "sulfate bag"
+          "to_container": "sulfate_bag"
         }
       ]
     },
@@ -7731,7 +7731,7 @@
       },
       "reagents": [
         {
-          "code": "fluor lapis",
+          "code": "fluor_lapis",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "ARGMOD_CALCIUM_FLUORIDE",
@@ -7740,17 +7740,17 @@
           }
         },
         {
-          "code": "fluor lapis bag",
+          "code": "fluor_lapis_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "fluor lapis",
+          "contains": "fluor_lapis",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -7759,17 +7759,17 @@
           }
         },
         {
-          "code": "vitriol jug",
+          "code": "vitriol_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7779,7 +7779,7 @@
           }
         },
         {
-          "code": "fluor jug",
+          "code": "fluor_jug",
           "type": "JUG",
           "quantity": 1,
           "reaction_class": "NICKEL_OR_NOBLE",
@@ -7796,14 +7796,14 @@
           "mat_id": "ARGMOD_HYDROFLUORIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "fluor jug"
+          "to_container": "fluor_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "PLASTER",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -7836,7 +7836,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -7846,7 +7846,7 @@
           }
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -7855,17 +7855,17 @@
           }
         },
         {
-          "code": "vitriol jug",
+          "code": "vitriol_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7875,7 +7875,7 @@
           }
         },
         {
-          "code": "niter jug",
+          "code": "niter_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -7892,7 +7892,7 @@
           "mat_id": "ARGMOD_NITRIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "niter jug"
+          "to_container": "niter_jug"
         },
         {
           "type": "POWDER_MISC",
@@ -7902,7 +7902,7 @@
           },
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -7931,7 +7931,7 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "saltpeter",
@@ -7941,7 +7941,7 @@
           }
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 300,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -7950,17 +7950,17 @@
           }
         },
         {
-          "code": "vitriol jug",
+          "code": "vitriol_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -7970,7 +7970,7 @@
           }
         },
         {
-          "code": "niter jug",
+          "code": "niter_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -7987,14 +7987,14 @@
           "mat_id": "ARGMOD_NITRIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "niter jug"
+          "to_container": "niter_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_SODIUM_BISULFATE",
           "count": 2,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -8014,7 +8014,7 @@
       },
       "reagents": [
         {
-          "code": "potash saltpeter",
+          "code": "potash_saltpeter",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "ARGMOD_POTASSIUM_NITRATE",
@@ -8023,17 +8023,17 @@
           }
         },
         {
-          "code": "saltpeter bag",
+          "code": "saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "potash saltpeter",
+          "contains": "potash_saltpeter",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 300,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -8042,17 +8042,17 @@
           }
         },
         {
-          "code": "vitriol jug",
+          "code": "vitriol_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -8062,7 +8062,7 @@
           }
         },
         {
-          "code": "niter jug",
+          "code": "niter_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -8079,14 +8079,14 @@
           "mat_id": "ARGMOD_NITRIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "niter jug"
+          "to_container": "niter_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_POTASSIUM_BISULFATE",
           "count": 2,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -8109,7 +8109,7 @@
       },
       "reagents": [
         {
-          "code": "spirit of niter",
+          "code": "spirit_of_niter",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_NITRIC_ACID",
@@ -8118,17 +8118,17 @@
           }
         },
         {
-          "code": "niter jug",
+          "code": "niter_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of niter",
+          "contains": "spirit_of_niter",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "spirit of muria",
+          "code": "spirit_of_muria",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
@@ -8137,17 +8137,17 @@
           }
         },
         {
-          "code": "muria jug",
+          "code": "muria_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of muria",
+          "contains": "spirit_of_muria",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "aqua regia jug",
+          "code": "aqua_regia_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -8164,7 +8164,7 @@
           "mat_id": "ARGMOD_AQUA_REGIA",
           "count": 2,
           "dimension": 150,
-          "to_container": "aqua regia jug"
+          "to_container": "aqua_regia_jug"
         }
       ]
     },
@@ -8187,7 +8187,7 @@
       },
       "reagents": [
         {
-          "code": "muriate of manganese",
+          "code": "muriate_of_manganese",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_MANGANESE_CHLORIDE",
@@ -8196,17 +8196,17 @@
           }
         },
         {
-          "code": "muriate of manganese bag",
+          "code": "muriate_of_manganese_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "muriate of manganese",
+          "contains": "muriate_of_manganese",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "milk of lime",
+          "code": "milk_of_lime",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "MILK_OF_LIME",
@@ -8218,14 +8218,14 @@
           "code": "bucket",
           "type": "BUCKET",
           "quantity": 1,
-          "contains": "milk of lime",
+          "contains": "milk_of_lime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -8235,7 +8235,7 @@
           }
         },
         {
-          "code": "precipitate bag2",
+          "code": "precipitate_bag2",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -8251,14 +8251,14 @@
           "mat_id": "MANGANESE_OXIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_CALCIUM_CHLORIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag2"
+          "to_container": "precipitate_bag2"
         }
       ]
     },
@@ -8290,7 +8290,7 @@
           }
         },
         {
-          "code": "hartshorn bag",
+          "code": "hartshorn_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -8306,7 +8306,7 @@
           "mat_id": "ARGMOD_AMMONIUM_CARBONATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "hartshorn bag"
+          "to_container": "hartshorn_bag"
         }
       ]
     },
@@ -8338,7 +8338,7 @@
           }
         },
         {
-          "code": "hartshorn bag",
+          "code": "hartshorn_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -8354,7 +8354,7 @@
           "mat_id": "ARGMOD_AMMONIUM_CARBONATE",
           "count": 4,
           "dimension": 150,
-          "to_container": "hartshorn bag"
+          "to_container": "hartshorn_bag"
         }
       ]
     },
@@ -8386,7 +8386,7 @@
           }
         },
         {
-          "code": "hartshorn bag",
+          "code": "hartshorn_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "hartshorn",
@@ -8396,7 +8396,7 @@
           }
         },
         {
-          "code": "ammonia jug",
+          "code": "ammonia_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -8415,7 +8415,7 @@
           }
         },
         {
-          "code": "quicklime bag",
+          "code": "quicklime_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "quicklime",
@@ -8425,7 +8425,7 @@
           }
         },
         {
-          "code": "residual bag",
+          "code": "residual_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -8441,14 +8441,14 @@
           "mat_id": "ARGMOD_AMMONIA_SOLUTION",
           "count": 2,
           "dimension": 150,
-          "to_container": "ammonia jug"
+          "to_container": "ammonia_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_CALCIUM_CARBONATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "residual bag"
+          "to_container": "residual_bag"
         }
       ]
     },
@@ -8471,7 +8471,7 @@
       },
       "reagents": [
         {
-          "code": "salt of ammon",
+          "code": "salt_of_ammon",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "ARGMOD_AMMONIUM_CHLORIDE",
@@ -8480,17 +8480,17 @@
           }
         },
         {
-          "code": "salt of ammon bag",
+          "code": "salt_of_ammon_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "salt of ammon",
+          "contains": "salt_of_ammon",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "ammonia jug",
+          "code": "ammonia_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -8500,7 +8500,7 @@
           }
         },
         {
-          "code": "milk of lime",
+          "code": "milk_of_lime",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "MILK_OF_LIME",
@@ -8512,14 +8512,14 @@
           "code": "bucket",
           "type": "BUCKET",
           "quantity": 1,
-          "contains": "milk of lime",
+          "contains": "milk_of_lime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -8535,14 +8535,14 @@
           "mat_id": "ARGMOD_AMMONIA_SOLUTION",
           "count": 2,
           "dimension": 150,
-          "to_container": "ammonia jug"
+          "to_container": "ammonia_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_CALCIUM_CHLORIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -8565,7 +8565,7 @@
       },
       "reagents": [
         {
-          "code": "ammoniacal vitriol",
+          "code": "ammoniacal_vitriol",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "ARGMOD_AMMONIUM_SULFATE",
@@ -8574,17 +8574,17 @@
           }
         },
         {
-          "code": "ammoniacal vitriol bag",
+          "code": "ammoniacal_vitriol_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "ammoniacal vitriol",
+          "contains": "ammoniacal_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "ammonia jug",
+          "code": "ammonia_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -8594,7 +8594,7 @@
           }
         },
         {
-          "code": "milk of lime",
+          "code": "milk_of_lime",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "MILK_OF_LIME",
@@ -8606,14 +8606,14 @@
           "code": "bucket",
           "type": "BUCKET",
           "quantity": 1,
-          "contains": "milk of lime",
+          "contains": "milk_of_lime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -8629,14 +8629,14 @@
           "mat_id": "ARGMOD_AMMONIA_SOLUTION",
           "count": 2,
           "dimension": 150,
-          "to_container": "ammonia jug"
+          "to_container": "ammonia_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "GYPSUM",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -8659,7 +8659,7 @@
       },
       "reagents": [
         {
-          "code": "manganese oxide",
+          "code": "manganese_oxide",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "MANGANESE_OXIDE",
@@ -8668,17 +8668,17 @@
           }
         },
         {
-          "code": "manganese oxide bag",
+          "code": "manganese_oxide_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "manganese oxide",
+          "contains": "manganese_oxide",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "spirit of muria",
+          "code": "spirit_of_muria",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
@@ -8687,17 +8687,17 @@
           }
         },
         {
-          "code": "muria jug",
+          "code": "muria_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of muria",
+          "contains": "spirit_of_muria",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "dessicant salt of calcia",
+          "code": "dessicant_salt_of_calcia",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_CALCIUM_CHLORIDE",
@@ -8707,10 +8707,10 @@
           }
         },
         {
-          "code": "salt of calcia bag",
+          "code": "salt_of_calcia_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "dessicant salt of calcia",
+          "contains": "dessicant_salt_of_calcia",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -8726,7 +8726,7 @@
           }
         },
         {
-          "code": "alumina bag",
+          "code": "alumina_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "alumina",
@@ -8745,7 +8745,7 @@
           }
         },
         {
-          "code": "salt bag",
+          "code": "salt_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "salt",
@@ -8760,7 +8760,7 @@
           "quantity": 300
         },
         {
-          "code": "muriate of manganese bag",
+          "code": "muriate_of_manganese_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -8770,7 +8770,7 @@
           }
         },
         {
-          "code": "aluminum salt bag",
+          "code": "aluminum_salt_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -8786,14 +8786,14 @@
           "mat_id": "ARGMOD_MANGANESE_CHLORIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "muriate of manganese bag"
+          "to_container": "muriate_of_manganese_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_SODIUM_ALUMINUM_CHLORIDE",
           "count": 2,
           "dimension": 150,
-          "to_container": "aluminum salt bag"
+          "to_container": "aluminum_salt_bag"
         }
       ]
     },
@@ -8816,7 +8816,7 @@
       },
       "reagents": [
         {
-          "code": "manganese oxide",
+          "code": "manganese_oxide",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "MANGANESE_OXIDE",
@@ -8825,17 +8825,17 @@
           }
         },
         {
-          "code": "manganese oxide bag",
+          "code": "manganese_oxide_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "manganese oxide",
+          "contains": "manganese_oxide",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "spirit of muria",
+          "code": "spirit_of_muria",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
@@ -8844,17 +8844,17 @@
           }
         },
         {
-          "code": "muria jug",
+          "code": "muria_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of muria",
+          "contains": "spirit_of_muria",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "dessicant salt of calcia",
+          "code": "dessicant_salt_of_calcia",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_CALCIUM_CHLORIDE",
@@ -8864,10 +8864,10 @@
           }
         },
         {
-          "code": "salt of calcia bag",
+          "code": "salt_of_calcia_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "dessicant salt of calcia",
+          "contains": "dessicant_salt_of_calcia",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -8883,7 +8883,7 @@
           }
         },
         {
-          "code": "titania bag",
+          "code": "titania_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "titania",
@@ -8898,7 +8898,7 @@
           "quantity": 300
         },
         {
-          "code": "muriate of manganese bag",
+          "code": "muriate_of_manganese_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -8908,7 +8908,7 @@
           }
         },
         {
-          "code": "titan jug",
+          "code": "titan_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -8925,14 +8925,14 @@
           "mat_id": "ARGMOD_MANGANESE_CHLORIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "muriate of manganese bag"
+          "to_container": "muriate_of_manganese_bag"
         },
         {
           "type": "LIQUID_MISC_INORGANIC",
           "mat_id": "ARGMOD_TITANIUM_CHLORIDE",
           "count": 2,
           "dimension": 150,
-          "to_container": "titan jug"
+          "to_container": "titan_jug"
         }
       ]
     },
@@ -8952,7 +8952,7 @@
       },
       "reagents": [
         {
-          "code": "rough beryl",
+          "code": "rough_beryl",
           "type": "ROUGH_ANY",
           "quantity": 1,
           "reaction_class": "BERYLLIUM"
@@ -8967,7 +8967,7 @@
           }
         },
         {
-          "code": "caustic bucket",
+          "code": "caustic_bucket",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "caustic",
@@ -8977,7 +8977,7 @@
           }
         },
         {
-          "code": "spirit of fluor",
+          "code": "spirit_of_fluor",
           "type": "LIQUID_INORGANIC",
           "quantity": 300,
           "mat_id": "ARGMOD_HYDROFLUORIC_ACID",
@@ -8986,17 +8986,17 @@
           }
         },
         {
-          "code": "fluor jug",
+          "code": "fluor_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of fluor",
+          "contains": "spirit_of_fluor",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "flowers of beryl-alum bag",
+          "code": "flowers_of_beryl-alum bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9012,7 +9012,7 @@
           "mat_id": "ARGMOD_BERYLLIUM_ALUMINUM_FLUORIDE",
           "count": 2,
           "dimension": 150,
-          "to_container": "flowers of beryl-alum bag"
+          "to_container": "flowers_of_beryl-alum bag"
         },
         {
           "type": "BAR",
@@ -9044,7 +9044,7 @@
           "mat_id": "ILMENITE"
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 300,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -9053,17 +9053,17 @@
           }
         },
         {
-          "code": "vitriol jug",
+          "code": "vitriol_jug",
           "type": "JUG",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "vitriol bag",
+          "code": "vitriol_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9073,7 +9073,7 @@
           }
         },
         {
-          "code": "titania bag",
+          "code": "titania_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9089,14 +9089,14 @@
           "mat_id": "IRON_SULFATE",
           "count": 4,
           "dimension": 150,
-          "to_container": "vitriol bag"
+          "to_container": "vitriol_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_TITANIUM_OXIDE",
           "count": 4,
           "dimension": 150,
-          "to_container": "titania bag"
+          "to_container": "titania_bag"
         }
       ]
     },
@@ -9128,7 +9128,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "sulfate",
@@ -9147,7 +9147,7 @@
           }
         },
         {
-          "code": "lime bag",
+          "code": "lime_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "lime",
@@ -9162,7 +9162,7 @@
           "quantity": 150
         },
         {
-          "code": "soda ash bag",
+          "code": "soda_ash_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9178,7 +9178,7 @@
           "mat_id": "ARGMOD_SODIUM_CARBONATE",
           "count": 2,
           "dimension": 150,
-          "to_container": "soda ash bag"
+          "to_container": "soda_ash_bag"
         },
         {
           "type": "BAR",
@@ -9215,7 +9215,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "sulfate",
@@ -9234,7 +9234,7 @@
           }
         },
         {
-          "code": "lime bag",
+          "code": "lime_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "lime",
@@ -9287,7 +9287,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "sulfate",
@@ -9306,7 +9306,7 @@
           }
         },
         {
-          "code": "lime bag",
+          "code": "lime_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "lime",
@@ -9321,7 +9321,7 @@
           "quantity": 300
         },
         {
-          "code": "soda ash bag",
+          "code": "soda_ash_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9337,7 +9337,7 @@
           "mat_id": "ARGMOD_SODIUM_CARBONATE",
           "count": 4,
           "dimension": 150,
-          "to_container": "soda ash bag"
+          "to_container": "soda_ash_bag"
         },
         {
           "type": "BAR",
@@ -9371,7 +9371,7 @@
           }
         },
         {
-          "code": "sulfate bag",
+          "code": "sulfate_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "sulfate",
@@ -9390,7 +9390,7 @@
           }
         },
         {
-          "code": "lime bag",
+          "code": "lime_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "lime",
@@ -9443,7 +9443,7 @@
           }
         },
         {
-          "code": "salt bag",
+          "code": "salt_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "salt",
@@ -9453,7 +9453,7 @@
           }
         },
         {
-          "code": "ammoniacal liquor",
+          "code": "ammoniacal_liquor",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_AMMONIA_SOLUTION",
@@ -9462,17 +9462,17 @@
           }
         },
         {
-          "code": "ammoniacal liquor jug",
+          "code": "ammoniacal_liquor_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "ammoniacal liquor",
+          "contains": "ammoniacal_liquor",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "spirit of muria",
+          "code": "spirit_of_muria",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
@@ -9481,10 +9481,10 @@
           }
         },
         {
-          "code": "spirit of muria jug",
+          "code": "spirit_of_muria_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "spirit of muria",
+          "contains": "spirit_of_muria",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -9500,7 +9500,7 @@
           }
         },
         {
-          "code": "lime bag",
+          "code": "lime_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "lime",
@@ -9510,7 +9510,7 @@
           }
         },
         {
-          "code": "soda ash bag",
+          "code": "soda_ash_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9520,7 +9520,7 @@
           }
         },
         {
-          "code": "salt of calcia bag",
+          "code": "salt_of_calcia_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9530,7 +9530,7 @@
           }
         },
         {
-          "code": "salt of ammon bag",
+          "code": "salt_of_ammon_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9546,21 +9546,21 @@
           "mat_id": "ARGMOD_SODIUM_CARBONATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "soda ash bag"
+          "to_container": "soda_ash_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_AMMONIUM_CHLORIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "salt of ammon bag"
+          "to_container": "salt_of_ammon_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_CALCIUM_CHLORIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "salt of calcia bag"
+          "to_container": "salt_of_calcia_bag"
         }
       ]
     },
@@ -9580,7 +9580,7 @@
       },
       "reagents": [
         {
-          "code": "potash salt",
+          "code": "potash_salt",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "ARGMOD_POTASSIUM_CHLORIDE",
@@ -9589,17 +9589,17 @@
           }
         },
         {
-          "code": "potash salt bag",
+          "code": "potash_salt_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "potash salt",
+          "contains": "potash_salt",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "calcic saltpeter",
+          "code": "calcic_saltpeter",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_CALCIUM_NITRATE",
@@ -9608,17 +9608,17 @@
           }
         },
         {
-          "code": "calcic saltpeter bag",
+          "code": "calcic_saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "calcic saltpeter",
+          "contains": "calcic_saltpeter",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9628,7 +9628,7 @@
           }
         },
         {
-          "code": "evaporate bag",
+          "code": "evaporate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9644,14 +9644,14 @@
           "mat_id": "ARGMOD_POTASSIUM_NITRATE",
           "count": 2,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_CALCIUM_CHLORIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "evaporate bag"
+          "to_container": "evaporate_bag"
         }
       ]
     },
@@ -9671,7 +9671,7 @@
       },
       "reagents": [
         {
-          "code": "potash salt",
+          "code": "potash_salt",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "ARGMOD_POTASSIUM_CHLORIDE",
@@ -9680,17 +9680,17 @@
           }
         },
         {
-          "code": "potash salt bag",
+          "code": "potash_salt_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "potash salt",
+          "contains": "potash_salt",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "magnesiac saltpeter",
+          "code": "magnesiac_saltpeter",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_MAGNESIUM_NITRATE",
@@ -9699,17 +9699,17 @@
           }
         },
         {
-          "code": "magnesiac saltpeter bag",
+          "code": "magnesiac_saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "magnesiac saltpeter",
+          "contains": "magnesiac_saltpeter",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9719,7 +9719,7 @@
           }
         },
         {
-          "code": "evaporate bag",
+          "code": "evaporate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9735,14 +9735,14 @@
           "mat_id": "ARGMOD_POTASSIUM_NITRATE",
           "count": 2,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_MAGNESIUM_CHLORIDE",
           "count": 1,
           "dimension": 150,
-          "to_container": "evaporate bag"
+          "to_container": "evaporate_bag"
         }
       ]
     },
@@ -9762,7 +9762,7 @@
       },
       "reagents": [
         {
-          "code": "soda ash",
+          "code": "soda_ash",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_SODIUM_CARBONATE",
@@ -9771,17 +9771,17 @@
           }
         },
         {
-          "code": "soda ash bag",
+          "code": "soda_ash_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "soda ash",
+          "contains": "soda_ash",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "calcic saltpeter",
+          "code": "calcic_saltpeter",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_CALCIUM_NITRATE",
@@ -9790,17 +9790,17 @@
           }
         },
         {
-          "code": "calcic saltpeter bag",
+          "code": "calcic_saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "calcic saltpeter",
+          "contains": "calcic_saltpeter",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9810,7 +9810,7 @@
           }
         },
         {
-          "code": "evaporate bag",
+          "code": "evaporate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9826,14 +9826,14 @@
           "mat_id": "ARGMOD_SODIUM_NITRATE",
           "count": 2,
           "dimension": 150,
-          "to_container": "evaporate bag"
+          "to_container": "evaporate_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_CALCIUM_CARBONATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -9853,7 +9853,7 @@
       },
       "reagents": [
         {
-          "code": "soda ash",
+          "code": "soda_ash",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_SODIUM_CARBONATE",
@@ -9862,17 +9862,17 @@
           }
         },
         {
-          "code": "soda ash bag",
+          "code": "soda_ash_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "soda ash",
+          "contains": "soda_ash",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "magnesiac saltpeter",
+          "code": "magnesiac_saltpeter",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_MAGNESIUM_NITRATE",
@@ -9881,17 +9881,17 @@
           }
         },
         {
-          "code": "magnesiac saltpeter bag",
+          "code": "magnesiac_saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "magnesiac saltpeter",
+          "contains": "magnesiac_saltpeter",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9901,7 +9901,7 @@
           }
         },
         {
-          "code": "evaporate bag",
+          "code": "evaporate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9917,14 +9917,14 @@
           "mat_id": "ARGMOD_SODIUM_NITRATE",
           "count": 2,
           "dimension": 150,
-          "to_container": "evaporate bag"
+          "to_container": "evaporate_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_MAGNESIUM_CARBONATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -9949,7 +9949,7 @@
           "quantity": 150
         },
         {
-          "code": "calcic saltpeter",
+          "code": "calcic_saltpeter",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_CALCIUM_NITRATE",
@@ -9958,17 +9958,17 @@
           }
         },
         {
-          "code": "calcic saltpeter bag",
+          "code": "calcic_saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "calcic saltpeter",
+          "contains": "calcic_saltpeter",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9978,7 +9978,7 @@
           }
         },
         {
-          "code": "evaporate bag",
+          "code": "evaporate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -9994,14 +9994,14 @@
           "mat_id": "ARGMOD_POTASSIUM_NITRATE",
           "count": 2,
           "dimension": 150,
-          "to_container": "evaporate bag"
+          "to_container": "evaporate_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_CALCIUM_CARBONATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -10026,7 +10026,7 @@
           "quantity": 150
         },
         {
-          "code": "magnesiac saltpeter",
+          "code": "magnesiac_saltpeter",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_MAGNESIUM_NITRATE",
@@ -10035,17 +10035,17 @@
           }
         },
         {
-          "code": "magnesiac saltpeter bag",
+          "code": "magnesiac_saltpeter_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "magnesiac saltpeter",
+          "contains": "magnesiac_saltpeter",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -10055,7 +10055,7 @@
           }
         },
         {
-          "code": "evaporate bag",
+          "code": "evaporate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -10071,14 +10071,14 @@
           "mat_id": "ARGMOD_POTASSIUM_NITRATE",
           "count": 2,
           "dimension": 150,
-          "to_container": "evaporate bag"
+          "to_container": "evaporate_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_MAGNESIUM_CARBONATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -10110,7 +10110,7 @@
           }
         },
         {
-          "code": "salt bag",
+          "code": "salt_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "salt",
@@ -10120,7 +10120,7 @@
           }
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -10129,17 +10129,17 @@
           }
         },
         {
-          "code": "vitriol jug",
+          "code": "vitriol_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -10149,7 +10149,7 @@
           }
         },
         {
-          "code": "muria jug",
+          "code": "muria_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -10166,14 +10166,14 @@
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "muria jug"
+          "to_container": "muria_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_SODIUM_BISULFATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -10202,7 +10202,7 @@
           }
         },
         {
-          "code": "salt bag",
+          "code": "salt_bag",
           "type": "CONTAINER",
           "quantity": 1,
           "contains": "salt",
@@ -10212,7 +10212,7 @@
           }
         },
         {
-          "code": "sodium bisulfate",
+          "code": "sodium_bisulfate",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_SODIUM_BISULFATE",
@@ -10221,17 +10221,17 @@
           }
         },
         {
-          "code": "sodium bisulfate bag",
+          "code": "sodium_bisulfate_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "sodium bisulfate",
+          "contains": "sodium_bisulfate",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -10241,7 +10241,7 @@
           }
         },
         {
-          "code": "muria jug",
+          "code": "muria_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -10258,14 +10258,14 @@
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "muria jug"
+          "to_container": "muria_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_SODIUM_SULFATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -10288,7 +10288,7 @@
       },
       "reagents": [
         {
-          "code": "potash salt",
+          "code": "potash_salt",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_POTASSIUM_CHLORIDE",
@@ -10297,17 +10297,17 @@
           }
         },
         {
-          "code": "potash salt bag",
+          "code": "potash_salt_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "potash salt",
+          "contains": "potash_salt",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -10316,17 +10316,17 @@
           }
         },
         {
-          "code": "vitriol jug",
+          "code": "vitriol_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -10336,7 +10336,7 @@
           }
         },
         {
-          "code": "muria jug",
+          "code": "muria_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -10353,14 +10353,14 @@
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "muria jug"
+          "to_container": "muria_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_POTASSIUM_BISULFATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -10380,7 +10380,7 @@
       },
       "reagents": [
         {
-          "code": "potash salt",
+          "code": "potash_salt",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_POTASSIUM_CHLORIDE",
@@ -10389,17 +10389,17 @@
           }
         },
         {
-          "code": "potash salt bag",
+          "code": "potash_salt_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "potash salt",
+          "contains": "potash_salt",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "potassium bisulfate",
+          "code": "potassium_bisulfate",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_POTASSIUM_BISULFATE",
@@ -10408,17 +10408,17 @@
           }
         },
         {
-          "code": "potassium bisulfate bag",
+          "code": "potassium_bisulfate_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "potassium bisulfate",
+          "contains": "potassium_bisulfate",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -10428,7 +10428,7 @@
           }
         },
         {
-          "code": "muria jug",
+          "code": "muria_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -10445,14 +10445,14 @@
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
           "count": 1,
           "dimension": 150,
-          "to_container": "muria jug"
+          "to_container": "muria_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_POTASSIUM_SULFATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -10472,7 +10472,7 @@
       },
       "reagents": [
         {
-          "code": "calcia salt",
+          "code": "calcia_salt",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_CALCIUM_CHLORIDE",
@@ -10481,17 +10481,17 @@
           }
         },
         {
-          "code": "calcia salt bag",
+          "code": "calcia_salt_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "calcia salt",
+          "contains": "calcia_salt",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 150,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -10500,17 +10500,17 @@
           }
         },
         {
-          "code": "vitriol jug",
+          "code": "vitriol_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -10520,7 +10520,7 @@
           }
         },
         {
-          "code": "muria jug",
+          "code": "muria_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -10537,14 +10537,14 @@
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
           "count": 2,
           "dimension": 150,
-          "to_container": "muria jug"
+          "to_container": "muria_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "PLASTER",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -10564,7 +10564,7 @@
       },
       "reagents": [
         {
-          "code": "magnesia salt",
+          "code": "magnesia_salt",
           "type": "POWDER",
           "quantity": 150,
           "mat_id": "ARGMOD_MAGNESIUM_CHLORIDE",
@@ -10573,17 +10573,17 @@
           }
         },
         {
-          "code": "magnesia salt bag",
+          "code": "magnesia_salt_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "magnesia salt",
+          "contains": "magnesia_salt",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "salt of ammon",
+          "code": "salt_of_ammon",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "ARGMOD_AMMONIUM_CHLORIDE",
@@ -10592,17 +10592,17 @@
           }
         },
         {
-          "code": "salt of ammon bag",
+          "code": "salt_of_ammon_bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "salt of ammon",
+          "contains": "salt_of_ammon",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "oil of vitriol",
+          "code": "oil_of_vitriol",
           "type": "LIQUID_INORGANIC",
           "quantity": 300,
           "mat_id": "ARGMOD_SULFURIC_ACID",
@@ -10611,17 +10611,17 @@
           }
         },
         {
-          "code": "vitriol jug",
+          "code": "vitriol_jug",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "oil of vitriol",
+          "contains": "oil_of_vitriol",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
           }
         },
         {
-          "code": "precipitate bag",
+          "code": "precipitate_bag",
           "type": "BAG",
           "quantity": 1,
           "flags": {
@@ -10631,7 +10631,7 @@
           }
         },
         {
-          "code": "muria jug",
+          "code": "muria_jug",
           "type": "JUG",
           "quantity": 1,
           "flags": {
@@ -10648,21 +10648,21 @@
           "mat_id": "ARGMOD_HYDROCHLORIC_ACID",
           "count": 4,
           "dimension": 150,
-          "to_container": "muria jug"
+          "to_container": "muria_jug"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_MAGNESIUM_SULFATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         },
         {
           "type": "POWDER_MISC",
           "mat_id": "ARGMOD_AMMONIUM_SULFATE",
           "count": 1,
           "dimension": 150,
-          "to_container": "precipitate bag"
+          "to_container": "precipitate_bag"
         }
       ]
     },
@@ -12214,7 +12214,7 @@
       },
       "reagents": [
         {
-          "code": "sulfide ore",
+          "code": "sulfide_ore",
           "type": "BOULDER_ANY",
           "quantity": 1,
           "reaction_class": "SULFIDE_ORE",
@@ -12544,7 +12544,7 @@
       },
       "reagents": [
         {
-          "code": "carbonate of lime",
+          "code": "carbonate_of_lime",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "ARGMOD_CALCIUM_CARBONATE",
@@ -12556,7 +12556,7 @@
           "code": "bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "carbonate of lime",
+          "contains": "carbonate_of_lime",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
@@ -12643,7 +12643,7 @@
       },
       "reagents": [
         {
-          "code": "magnesia alba",
+          "code": "magnesia_alba",
           "type": "POWDER",
           "quantity": 300,
           "mat_id": "ARGMOD_MAGNESIUM_CARBONATE",
@@ -12655,7 +12655,7 @@
           "code": "bag",
           "type": "CONTAINER",
           "quantity": 1,
-          "contains": "magnesia alba",
+          "contains": "magnesia_alba",
           "flags": {
             "preserve": true,
             "does_not_determine_product_amount": true
