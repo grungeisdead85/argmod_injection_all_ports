@@ -1,0 +1,15 @@
+[ID:metal_library_injected]
+[NUMERIC_VERSION:1]
+[DISPLAYED_VERSION:1.0.0]
+[EARLIEST_COMPATIBLE_NUMERIC_VERSION:1]
+[EARLIEST_COMPATIBLE_DISPLAYED_VERSION:1.0.0]
+[AUTHOR:Putnam]
+[NAME:Elemental metals library (Injected)]
+[DESCRIPTION:Putnam's elemental metals for Refinish Metal. 33 of the 38 are injected at runtime instead of taking worldgen inorganic slots. Chromium, manganese, cobalt, molybdenum and palladium stay in raws, where ores and other mods reach them.]
+
+[REQUIRES_ID:refinish_steel]
+[CONFLICTS_WITH_ID:metal_library]
+
+[STEAM_TITLE:Elemental metals library (Injected)]
+
+[STEAM_TAG:metals]
