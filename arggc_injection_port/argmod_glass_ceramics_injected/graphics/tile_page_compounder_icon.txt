@@ -1,8 +1,0 @@
-tile_page_compounder_icon
-
-[OBJECT:TILE_PAGE]
-
-[TILE_PAGE:BUILDING_ICONS_COMPOUNDER]
-	[FILE:images/icons_compounder_workshop.png]
-	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:32:32]
