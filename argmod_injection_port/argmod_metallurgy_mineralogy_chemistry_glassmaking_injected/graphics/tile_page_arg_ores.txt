@@ -1,0 +1,14 @@
+tile_page_ketaros_arg_ores
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:ARG_BOULDERS]
+	[FILE:images/arg_boulders.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:256:512]
+	
+[TILE_PAGE:ARG_BOULDERS2]
+	[FILE:images/arg_boulders2.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:256:512]
+
